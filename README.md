@@ -2,6 +2,9 @@
 
 Full explanation can be found in [this blog post](https://www.curiousily.com/posts/credit-card-fraud-detection-using-autoencoders-in-keras/). The source code is compatible with TensorFlow 1.1 and Keras 2.0.4
 
+
+
+
 ### Hands-On Machine Learning from Scratch
 
 Interested in deeper understanding of Machine Learning algorithms? Implement them in Python from scratch:
@@ -11,3 +14,6 @@ Interested in deeper understanding of Machine Learning algorithms? Implement the
 </a>
 
 <a href="https://leanpub.com/hmls" target="_blank">Read the book here</a>
+
+
+Here is the link for data of creditcard " https://drive.google.com/drive/folders/1yQe3CT01lrVVcLEPaw1szZccIqFAuCl2?usp=sharing "
