@@ -1,0 +1,9171 @@
+       £K"	   NDOÖAbrain.Event:2?Ñ@¡â	     wÓ–7	oùNDOÖA"Õ“
+j
+input_1Placeholder*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+dtype0*
+shape:ÿÿÿÿÿÿÿÿÿ
+m
+dense_1/random_uniform/shapeConst*
+_output_shapes
+:*
+dtype0*
+valueB"      
+_
+dense_1/random_uniform/minConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *A¿¾
+_
+dense_1/random_uniform/maxConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *A¿>
+§
+$dense_1/random_uniform/RandomUniformRandomUniformdense_1/random_uniform/shape*
+_output_shapes
+
+:*
+seed2ÂŸ*
+T0*
+seed±ÿå)*
+dtype0
+z
+dense_1/random_uniform/subSubdense_1/random_uniform/maxdense_1/random_uniform/min*
+T0*
+_output_shapes
+: 
+Œ
+dense_1/random_uniform/mulMul$dense_1/random_uniform/RandomUniformdense_1/random_uniform/sub*
+_output_shapes
+
+:*
+T0
+~
+dense_1/random_uniformAdddense_1/random_uniform/muldense_1/random_uniform/min*
+_output_shapes
+
+:*
+T0
+‚
+dense_1/kernel
+VariableV2*
+_output_shapes
+
+:*
+	container *
+shape
+:*
+dtype0*
+shared_name 
+¼
+dense_1/kernel/AssignAssigndense_1/kerneldense_1/random_uniform*!
+_class
+loc:@dense_1/kernel*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+{
+dense_1/kernel/readIdentitydense_1/kernel*
+T0*!
+_class
+loc:@dense_1/kernel*
+_output_shapes
+
+:
+Z
+dense_1/ConstConst*
+dtype0*
+_output_shapes
+:*
+valueB*    
+x
+dense_1/bias
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+©
+dense_1/bias/AssignAssigndense_1/biasdense_1/Const*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_1/bias
+q
+dense_1/bias/readIdentitydense_1/bias*
+T0*
+_class
+loc:@dense_1/bias*
+_output_shapes
+:
+
+dense_1/MatMulMatMulinput_1dense_1/kernel/read*
+transpose_b( *
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( 
+†
+dense_1/BiasAddBiasAdddense_1/MatMuldense_1/bias/read*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+data_formatNHWC*
+T0
+W
+dense_1/TanhTanhdense_1/BiasAdd*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+R
+dense_1/AbsAbsdense_1/Tanh*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+R
+dense_1/mul/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *·Ñ8
+`
+dense_1/mulMuldense_1/mul/xdense_1/Abs*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+`
+dense_1/Const_1Const*
+valueB"       *
+_output_shapes
+:*
+dtype0
+n
+dense_1/SumSumdense_1/muldense_1/Const_1*
+_output_shapes
+: *
+T0*
+	keep_dims( *
+
+Tidx0
+R
+dense_1/add/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+O
+dense_1/addAdddense_1/add/xdense_1/Sum*
+T0*
+_output_shapes
+: 
+m
+dense_2/random_uniform/shapeConst*
+valueB"      *
+dtype0*
+_output_shapes
+:
+_
+dense_2/random_uniform/minConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *wÖ¿
+_
+dense_2/random_uniform/maxConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *wÖ?
+¨
+$dense_2/random_uniform/RandomUniformRandomUniformdense_2/random_uniform/shape*
+dtype0*
+seed±ÿå)*
+T0*
+_output_shapes
+
+:*
+seed2²Äã
+z
+dense_2/random_uniform/subSubdense_2/random_uniform/maxdense_2/random_uniform/min*
+_output_shapes
+: *
+T0
+Œ
+dense_2/random_uniform/mulMul$dense_2/random_uniform/RandomUniformdense_2/random_uniform/sub*
+_output_shapes
+
+:*
+T0
+~
+dense_2/random_uniformAdddense_2/random_uniform/muldense_2/random_uniform/min*
+_output_shapes
+
+:*
+T0
+‚
+dense_2/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_2/kernel/AssignAssigndense_2/kerneldense_2/random_uniform*
+use_locking(*
+T0*!
+_class
+loc:@dense_2/kernel*
+validate_shape(*
+_output_shapes
+
+:
+{
+dense_2/kernel/readIdentitydense_2/kernel*
+_output_shapes
+
+:*!
+_class
+loc:@dense_2/kernel*
+T0
+Z
+dense_2/ConstConst*
+valueB*    *
+dtype0*
+_output_shapes
+:
+x
+dense_2/bias
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+©
+dense_2/bias/AssignAssigndense_2/biasdense_2/Const*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_2/bias
+q
+dense_2/bias/readIdentitydense_2/bias*
+_class
+loc:@dense_2/bias*
+_output_shapes
+:*
+T0
+“
+dense_2/MatMulMatMuldense_1/Tanhdense_2/kernel/read*
+transpose_b( *
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( 
+†
+dense_2/BiasAddBiasAdddense_2/MatMuldense_2/bias/read*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+data_formatNHWC*
+T0
+W
+dense_2/ReluReludense_2/BiasAdd*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+m
+dense_3/random_uniform/shapeConst*
+_output_shapes
+:*
+dtype0*
+valueB"      
+_
+dense_3/random_uniform/minConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *wÖ¿
+_
+dense_3/random_uniform/maxConst*
+valueB
+ *wÖ?*
+_output_shapes
+: *
+dtype0
+¨
+$dense_3/random_uniform/RandomUniformRandomUniformdense_3/random_uniform/shape*
+dtype0*
+seed±ÿå)*
+T0*
+_output_shapes
+
+:*
+seed2¢×æ
+z
+dense_3/random_uniform/subSubdense_3/random_uniform/maxdense_3/random_uniform/min*
+_output_shapes
+: *
+T0
+Œ
+dense_3/random_uniform/mulMul$dense_3/random_uniform/RandomUniformdense_3/random_uniform/sub*
+T0*
+_output_shapes
+
+:
+~
+dense_3/random_uniformAdddense_3/random_uniform/muldense_3/random_uniform/min*
+_output_shapes
+
+:*
+T0
+‚
+dense_3/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_3/kernel/AssignAssigndense_3/kerneldense_3/random_uniform*
+use_locking(*
+T0*!
+_class
+loc:@dense_3/kernel*
+validate_shape(*
+_output_shapes
+
+:
+{
+dense_3/kernel/readIdentitydense_3/kernel*
+T0*
+_output_shapes
+
+:*!
+_class
+loc:@dense_3/kernel
+Z
+dense_3/ConstConst*
+valueB*    *
+_output_shapes
+:*
+dtype0
+x
+dense_3/bias
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+©
+dense_3/bias/AssignAssigndense_3/biasdense_3/Const*
+use_locking(*
+T0*
+_class
+loc:@dense_3/bias*
+validate_shape(*
+_output_shapes
+:
+q
+dense_3/bias/readIdentitydense_3/bias*
+_class
+loc:@dense_3/bias*
+_output_shapes
+:*
+T0
+“
+dense_3/MatMulMatMuldense_2/Reludense_3/kernel/read*
+transpose_b( *'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+†
+dense_3/BiasAddBiasAdddense_3/MatMuldense_3/bias/read*
+data_formatNHWC*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+W
+dense_3/TanhTanhdense_3/BiasAdd*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+m
+dense_4/random_uniform/shapeConst*
+valueB"      *
+_output_shapes
+:*
+dtype0
+_
+dense_4/random_uniform/minConst*
+valueB
+ *A¿¾*
+dtype0*
+_output_shapes
+: 
+_
+dense_4/random_uniform/maxConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *A¿>
+¨
+$dense_4/random_uniform/RandomUniformRandomUniformdense_4/random_uniform/shape*
+_output_shapes
+
+:*
+seed2™‚¡*
+dtype0*
+T0*
+seed±ÿå)
+z
+dense_4/random_uniform/subSubdense_4/random_uniform/maxdense_4/random_uniform/min*
+T0*
+_output_shapes
+: 
+Œ
+dense_4/random_uniform/mulMul$dense_4/random_uniform/RandomUniformdense_4/random_uniform/sub*
+_output_shapes
+
+:*
+T0
+~
+dense_4/random_uniformAdddense_4/random_uniform/muldense_4/random_uniform/min*
+_output_shapes
+
+:*
+T0
+‚
+dense_4/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_4/kernel/AssignAssigndense_4/kerneldense_4/random_uniform*!
+_class
+loc:@dense_4/kernel*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+{
+dense_4/kernel/readIdentitydense_4/kernel*
+T0*
+_output_shapes
+
+:*!
+_class
+loc:@dense_4/kernel
+Z
+dense_4/ConstConst*
+_output_shapes
+:*
+dtype0*
+valueB*    
+x
+dense_4/bias
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+©
+dense_4/bias/AssignAssigndense_4/biasdense_4/Const*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@dense_4/bias*
+T0*
+use_locking(
+q
+dense_4/bias/readIdentitydense_4/bias*
+T0*
+_class
+loc:@dense_4/bias*
+_output_shapes
+:
+“
+dense_4/MatMulMatMuldense_3/Tanhdense_4/kernel/read*
+transpose_b( *'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+†
+dense_4/BiasAddBiasAdddense_4/MatMuldense_4/bias/read*
+T0*
+data_formatNHWC*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+W
+dense_4/ReluReludense_4/BiasAdd*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+]
+iterations/initial_valueConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+n
+
+iterations
+VariableV2*
+shape: *
+shared_name *
+dtype0*
+_output_shapes
+: *
+	container 
+ª
+iterations/AssignAssign
+iterationsiterations/initial_value*
+_output_shapes
+: *
+validate_shape(*
+_class
+loc:@iterations*
+T0*
+use_locking(
+g
+iterations/readIdentity
+iterations*
+T0*
+_output_shapes
+: *
+_class
+loc:@iterations
+U
+lr/initial_valueConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *oƒ:
+f
+lr
+VariableV2*
+_output_shapes
+: *
+	container *
+shape: *
+dtype0*
+shared_name 
+Š
+	lr/AssignAssignlrlr/initial_value*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+: *
+_class
+	loc:@lr
+O
+lr/readIdentitylr*
+T0*
+_output_shapes
+: *
+_class
+	loc:@lr
+Y
+beta_1/initial_valueConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *fff?
+j
+beta_1
+VariableV2*
+_output_shapes
+: *
+	container *
+shape: *
+dtype0*
+shared_name 
+š
+beta_1/AssignAssignbeta_1beta_1/initial_value*
+_class
+loc:@beta_1*
+_output_shapes
+: *
+T0*
+validate_shape(*
+use_locking(
+[
+beta_1/readIdentitybeta_1*
+_output_shapes
+: *
+_class
+loc:@beta_1*
+T0
+Y
+beta_2/initial_valueConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *w¾?
+j
+beta_2
+VariableV2*
+shared_name *
+dtype0*
+shape: *
+_output_shapes
+: *
+	container 
+š
+beta_2/AssignAssignbeta_2beta_2/initial_value*
+use_locking(*
+T0*
+_class
+loc:@beta_2*
+validate_shape(*
+_output_shapes
+: 
+[
+beta_2/readIdentitybeta_2*
+T0*
+_class
+loc:@beta_2*
+_output_shapes
+: 
+X
+decay/initial_valueConst*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+i
+decay
+VariableV2*
+_output_shapes
+: *
+	container *
+dtype0*
+shared_name *
+shape: 
+–
+decay/AssignAssigndecaydecay/initial_value*
+use_locking(*
+T0*
+_class
+
+loc:@decay*
+validate_shape(*
+_output_shapes
+: 
+X
+
+decay/readIdentitydecay*
+T0*
+_class
+
+loc:@decay*
+_output_shapes
+: 
+q
+dense_4_sample_weightsPlaceholder*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+shape:ÿÿÿÿÿÿÿÿÿ*
+dtype0
+ƒ
+dense_4_targetPlaceholder*0
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*
+dtype0*%
+shape:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+Z
+subSubdense_4/Reludense_4_target*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+G
+SquareSquaresub*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+X
+Mean/reduction_indicesConst*
+_output_shapes
+: *
+dtype0*
+value	B :
+w
+MeanMeanSquareMean/reduction_indices*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0*
+	keep_dims( *
+
+Tidx0
+[
+Mean_1/reduction_indicesConst*
+valueB *
+dtype0*
+_output_shapes
+: 
+y
+Mean_1MeanMeanMean_1/reduction_indices*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0*
+	keep_dims( *
+
+Tidx0
+X
+mulMulMean_1dense_4_sample_weights*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+O
+
+NotEqual/yConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *    
+f
+NotEqualNotEqualdense_4_sample_weights
+NotEqual/y*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+S
+CastCastNotEqual*
+
+SrcT0
+*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+
+DstT0
+O
+ConstConst*
+_output_shapes
+:*
+dtype0*
+valueB: 
+Y
+Mean_2MeanCastConst*
+_output_shapes
+: *
+T0*
+	keep_dims( *
+
+Tidx0
+M
+truedivRealDivmulMean_2*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+Q
+Const_1Const*
+valueB: *
+dtype0*
+_output_shapes
+:
+^
+Mean_3MeantruedivConst_1*
+	keep_dims( *
+
+Tidx0*
+T0*
+_output_shapes
+: 
+L
+mul_1/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+>
+mul_1Mulmul_1/xMean_3*
+T0*
+_output_shapes
+: 
+?
+addAddmul_1dense_1/add*
+T0*
+_output_shapes
+: 
+R
+ArgMax/dimensionConst*
+value	B :*
+dtype0*
+_output_shapes
+: 
+l
+ArgMaxArgMaxdense_4_targetArgMax/dimension*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0*
+
+Tidx0
+T
+ArgMax_1/dimensionConst*
+value	B :*
+dtype0*
+_output_shapes
+: 
+n
+ArgMax_1ArgMaxdense_4/ReluArgMax_1/dimension*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0*
+
+Tidx0
+N
+EqualEqualArgMaxArgMax_1*
+T0	*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+R
+Cast_1CastEqual*
+
+SrcT0
+*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+
+DstT0
+Q
+Const_2Const*
+valueB: *
+_output_shapes
+:*
+dtype0
+]
+Mean_4MeanCast_1Const_2*
+	keep_dims( *
+
+Tidx0*
+T0*
+_output_shapes
+: 
+!
+
+group_depsNoOp^add^Mean_4
+j
+gradients/ShapeConst*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+
+loc:@add
+l
+gradients/ConstConst*
+valueB
+ *  €?*
+_class
+
+loc:@add*
+_output_shapes
+: *
+dtype0
+q
+gradients/FillFillgradients/Shapegradients/Const*
+_output_shapes
+: *
+_class
+
+loc:@add*
+T0
+s
+gradients/add_grad/ShapeConst*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+
+loc:@add
+u
+gradients/add_grad/Shape_1Const*
+valueB *
+_class
+
+loc:@add*
+dtype0*
+_output_shapes
+: 
+Ì
+(gradients/add_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/add_grad/Shapegradients/add_grad/Shape_1*
+_class
+
+loc:@add*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+T0
+¯
+gradients/add_grad/SumSumgradients/Fill(gradients/add_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+
+loc:@add*
+_output_shapes
+:
+
+gradients/add_grad/ReshapeReshapegradients/add_grad/Sumgradients/add_grad/Shape*
+_output_shapes
+: *
+Tshape0*
+_class
+
+loc:@add*
+T0
+³
+gradients/add_grad/Sum_1Sumgradients/Fill*gradients/add_grad/BroadcastGradientArgs:1*
+_class
+
+loc:@add*
+_output_shapes
+:*
+T0*
+
+Tidx0*
+	keep_dims( 
+¤
+gradients/add_grad/Reshape_1Reshapegradients/add_grad/Sum_1gradients/add_grad/Shape_1*
+Tshape0*
+_class
+
+loc:@add*
+_output_shapes
+: *
+T0
+w
+gradients/mul_1_grad/ShapeConst*
+dtype0*
+_output_shapes
+: *
+valueB *
+_class
+
+loc:@mul_1
+y
+gradients/mul_1_grad/Shape_1Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+
+loc:@mul_1
+Ô
+*gradients/mul_1_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/mul_1_grad/Shapegradients/mul_1_grad/Shape_1*
+T0*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+_class
+
+loc:@mul_1
+~
+gradients/mul_1_grad/mulMulgradients/add_grad/ReshapeMean_3*
+_class
+
+loc:@mul_1*
+_output_shapes
+: *
+T0
+¿
+gradients/mul_1_grad/SumSumgradients/mul_1_grad/mul*gradients/mul_1_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+
+loc:@mul_1*
+_output_shapes
+:
+¦
+gradients/mul_1_grad/ReshapeReshapegradients/mul_1_grad/Sumgradients/mul_1_grad/Shape*
+T0*
+Tshape0*
+_class
+
+loc:@mul_1*
+_output_shapes
+: 
+
+gradients/mul_1_grad/mul_1Mulmul_1/xgradients/add_grad/Reshape*
+_output_shapes
+: *
+_class
+
+loc:@mul_1*
+T0
+Å
+gradients/mul_1_grad/Sum_1Sumgradients/mul_1_grad/mul_1,gradients/mul_1_grad/BroadcastGradientArgs:1*
+_class
+
+loc:@mul_1*
+_output_shapes
+:*
+T0*
+
+Tidx0*
+	keep_dims( 
+¬
+gradients/mul_1_grad/Reshape_1Reshapegradients/mul_1_grad/Sum_1gradients/mul_1_grad/Shape_1*
+T0*
+Tshape0*
+_class
+
+loc:@mul_1*
+_output_shapes
+: 
+ƒ
+ gradients/dense_1/add_grad/ShapeConst*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+loc:@dense_1/add
+…
+"gradients/dense_1/add_grad/Shape_1Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+loc:@dense_1/add
+ì
+0gradients/dense_1/add_grad/BroadcastGradientArgsBroadcastGradientArgs gradients/dense_1/add_grad/Shape"gradients/dense_1/add_grad/Shape_1*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/add*
+T0
+Õ
+gradients/dense_1/add_grad/SumSumgradients/add_grad/Reshape_10gradients/dense_1/add_grad/BroadcastGradientArgs*
+_class
+loc:@dense_1/add*
+_output_shapes
+:*
+T0*
+
+Tidx0*
+	keep_dims( 
+¾
+"gradients/dense_1/add_grad/ReshapeReshapegradients/dense_1/add_grad/Sum gradients/dense_1/add_grad/Shape*
+T0*
+Tshape0*
+_class
+loc:@dense_1/add*
+_output_shapes
+: 
+Ù
+ gradients/dense_1/add_grad/Sum_1Sumgradients/add_grad/Reshape_12gradients/dense_1/add_grad/BroadcastGradientArgs:1*
+_class
+loc:@dense_1/add*
+_output_shapes
+:*
+T0*
+
+Tidx0*
+	keep_dims( 
+Ä
+$gradients/dense_1/add_grad/Reshape_1Reshape gradients/dense_1/add_grad/Sum_1"gradients/dense_1/add_grad/Shape_1*
+T0*
+Tshape0*
+_class
+loc:@dense_1/add*
+_output_shapes
+: 
+ˆ
+#gradients/Mean_3_grad/Reshape/shapeConst*
+_output_shapes
+:*
+dtype0*
+valueB:*
+_class
+loc:@Mean_3
+»
+gradients/Mean_3_grad/ReshapeReshapegradients/mul_1_grad/Reshape_1#gradients/Mean_3_grad/Reshape/shape*
+Tshape0*
+_class
+loc:@Mean_3*
+_output_shapes
+:*
+T0
+}
+gradients/Mean_3_grad/ShapeShapetruediv*
+T0*
+out_type0*
+_class
+loc:@Mean_3*
+_output_shapes
+:
+¹
+gradients/Mean_3_grad/TileTilegradients/Mean_3_grad/Reshapegradients/Mean_3_grad/Shape*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@Mean_3*
+T0*
+
+Tmultiples0
+
+gradients/Mean_3_grad/Shape_1Shapetruediv*
+T0*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_3
+{
+gradients/Mean_3_grad/Shape_2Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+loc:@Mean_3
+€
+gradients/Mean_3_grad/ConstConst*
+valueB: *
+_class
+loc:@Mean_3*
+dtype0*
+_output_shapes
+:
+·
+gradients/Mean_3_grad/ProdProdgradients/Mean_3_grad/Shape_1gradients/Mean_3_grad/Const*
+_output_shapes
+: *
+_class
+loc:@Mean_3*
+T0*
+
+Tidx0*
+	keep_dims( 
+‚
+gradients/Mean_3_grad/Const_1Const*
+valueB: *
+_class
+loc:@Mean_3*
+_output_shapes
+:*
+dtype0
+»
+gradients/Mean_3_grad/Prod_1Prodgradients/Mean_3_grad/Shape_2gradients/Mean_3_grad/Const_1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@Mean_3*
+_output_shapes
+: 
+|
+gradients/Mean_3_grad/Maximum/yConst*
+value	B :*
+_class
+loc:@Mean_3*
+dtype0*
+_output_shapes
+: 
+£
+gradients/Mean_3_grad/MaximumMaximumgradients/Mean_3_grad/Prod_1gradients/Mean_3_grad/Maximum/y*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_3
+¡
+gradients/Mean_3_grad/floordivFloorDivgradients/Mean_3_grad/Prodgradients/Mean_3_grad/Maximum*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_3
+
+gradients/Mean_3_grad/CastCastgradients/Mean_3_grad/floordiv*
+_output_shapes
+: *
+
+DstT0*
+_class
+loc:@Mean_3*
+
+SrcT0
+©
+gradients/Mean_3_grad/truedivRealDivgradients/Mean_3_grad/Tilegradients/Mean_3_grad/Cast*
+T0*
+_class
+loc:@Mean_3*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+™
+(gradients/dense_1/Sum_grad/Reshape/shapeConst*
+valueB"      *
+_class
+loc:@dense_1/Sum*
+dtype0*
+_output_shapes
+:
+Ô
+"gradients/dense_1/Sum_grad/ReshapeReshape$gradients/dense_1/add_grad/Reshape_1(gradients/dense_1/Sum_grad/Reshape/shape*
+Tshape0*
+_class
+loc:@dense_1/Sum*
+_output_shapes
+
+:*
+T0
+‹
+ gradients/dense_1/Sum_grad/ShapeShapedense_1/mul*
+T0*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@dense_1/Sum
+Ñ
+gradients/dense_1/Sum_grad/TileTile"gradients/dense_1/Sum_grad/Reshape gradients/dense_1/Sum_grad/Shape*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/Sum*
+T0*
+
+Tmultiples0
+{
+gradients/truediv_grad/ShapeShapemul*
+T0*
+out_type0*
+_class
+loc:@truediv*
+_output_shapes
+:
+}
+gradients/truediv_grad/Shape_1Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+loc:@truediv
+Ü
+,gradients/truediv_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/truediv_grad/Shapegradients/truediv_grad/Shape_1*
+T0*
+_class
+loc:@truediv*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ
+š
+gradients/truediv_grad/RealDivRealDivgradients/Mean_3_grad/truedivMean_2*
+T0*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+Ë
+gradients/truediv_grad/SumSumgradients/truediv_grad/RealDiv,gradients/truediv_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@truediv*
+_output_shapes
+:
+»
+gradients/truediv_grad/ReshapeReshapegradients/truediv_grad/Sumgradients/truediv_grad/Shape*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+Tshape0*
+_class
+loc:@truediv
+p
+gradients/truediv_grad/NegNegmul*
+T0*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+™
+ gradients/truediv_grad/RealDiv_1RealDivgradients/truediv_grad/NegMean_2*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+Ÿ
+ gradients/truediv_grad/RealDiv_2RealDiv gradients/truediv_grad/RealDiv_1Mean_2*
+T0*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+¬
+gradients/truediv_grad/mulMulgradients/Mean_3_grad/truediv gradients/truediv_grad/RealDiv_2*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+Ë
+gradients/truediv_grad/Sum_1Sumgradients/truediv_grad/mul.gradients/truediv_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+:*
+_class
+loc:@truediv
+´
+ gradients/truediv_grad/Reshape_1Reshapegradients/truediv_grad/Sum_1gradients/truediv_grad/Shape_1*
+T0*
+_output_shapes
+: *
+Tshape0*
+_class
+loc:@truediv
+ƒ
+ gradients/dense_1/mul_grad/ShapeConst*
+valueB *
+_class
+loc:@dense_1/mul*
+dtype0*
+_output_shapes
+: 
+
+"gradients/dense_1/mul_grad/Shape_1Shapedense_1/Abs*
+T0*
+out_type0*
+_class
+loc:@dense_1/mul*
+_output_shapes
+:
+ì
+0gradients/dense_1/mul_grad/BroadcastGradientArgsBroadcastGradientArgs gradients/dense_1/mul_grad/Shape"gradients/dense_1/mul_grad/Shape_1*
+T0*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/mul
+¥
+gradients/dense_1/mul_grad/mulMulgradients/dense_1/Sum_grad/Tiledense_1/Abs*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/mul
+×
+gradients/dense_1/mul_grad/SumSumgradients/dense_1/mul_grad/mul0gradients/dense_1/mul_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_1/mul
+¾
+"gradients/dense_1/mul_grad/ReshapeReshapegradients/dense_1/mul_grad/Sum gradients/dense_1/mul_grad/Shape*
+T0*
+_output_shapes
+: *
+Tshape0*
+_class
+loc:@dense_1/mul
+©
+ gradients/dense_1/mul_grad/mul_1Muldense_1/mul/xgradients/dense_1/Sum_grad/Tile*
+_class
+loc:@dense_1/mul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+İ
+ gradients/dense_1/mul_grad/Sum_1Sum gradients/dense_1/mul_grad/mul_12gradients/dense_1/mul_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@dense_1/mul*
+_output_shapes
+:
+Õ
+$gradients/dense_1/mul_grad/Reshape_1Reshape gradients/dense_1/mul_grad/Sum_1"gradients/dense_1/mul_grad/Shape_1*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+Tshape0*
+_class
+loc:@dense_1/mul*
+T0
+v
+gradients/mul_grad/ShapeShapeMean_1*
+T0*
+out_type0*
+_class
+
+loc:@mul*
+_output_shapes
+:
+ˆ
+gradients/mul_grad/Shape_1Shapedense_4_sample_weights*
+T0*
+out_type0*
+_class
+
+loc:@mul*
+_output_shapes
+:
+Ì
+(gradients/mul_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/mul_grad/Shapegradients/mul_grad/Shape_1*
+T0*
+_class
+
+loc:@mul*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ
+›
+gradients/mul_grad/mulMulgradients/truediv_grad/Reshapedense_4_sample_weights*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+
+loc:@mul*
+T0
+·
+gradients/mul_grad/SumSumgradients/mul_grad/mul(gradients/mul_grad/BroadcastGradientArgs*
+_class
+
+loc:@mul*
+_output_shapes
+:*
+T0*
+
+Tidx0*
+	keep_dims( 
+«
+gradients/mul_grad/ReshapeReshapegradients/mul_grad/Sumgradients/mul_grad/Shape*
+T0*
+Tshape0*
+_class
+
+loc:@mul*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+
+gradients/mul_grad/mul_1MulMean_1gradients/truediv_grad/Reshape*
+_class
+
+loc:@mul*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+½
+gradients/mul_grad/Sum_1Sumgradients/mul_grad/mul_1*gradients/mul_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+
+loc:@mul*
+_output_shapes
+:
+±
+gradients/mul_grad/Reshape_1Reshapegradients/mul_grad/Sum_1gradients/mul_grad/Shape_1*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+Tshape0*
+_class
+
+loc:@mul
+‡
+gradients/dense_1/Abs_grad/SignSigndense_1/Tanh*
+_class
+loc:@dense_1/Abs*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+¾
+gradients/dense_1/Abs_grad/mulMul$gradients/dense_1/mul_grad/Reshape_1gradients/dense_1/Abs_grad/Sign*
+T0*
+_class
+loc:@dense_1/Abs*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+z
+gradients/Mean_1_grad/ShapeShapeMean*
+out_type0*
+_class
+loc:@Mean_1*
+_output_shapes
+:*
+T0
+w
+gradients/Mean_1_grad/SizeConst*
+dtype0*
+_output_shapes
+: *
+value	B :*
+_class
+loc:@Mean_1
+”
+gradients/Mean_1_grad/addAddMean_1/reduction_indicesgradients/Mean_1_grad/Size*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+š
+gradients/Mean_1_grad/modFloorModgradients/Mean_1_grad/addgradients/Mean_1_grad/Size*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+‚
+gradients/Mean_1_grad/Shape_1Const*
+valueB: *
+_class
+loc:@Mean_1*
+dtype0*
+_output_shapes
+:
+~
+!gradients/Mean_1_grad/range/startConst*
+value	B : *
+_class
+loc:@Mean_1*
+_output_shapes
+: *
+dtype0
+~
+!gradients/Mean_1_grad/range/deltaConst*
+dtype0*
+_output_shapes
+: *
+value	B :*
+_class
+loc:@Mean_1
+É
+gradients/Mean_1_grad/rangeRange!gradients/Mean_1_grad/range/startgradients/Mean_1_grad/Size!gradients/Mean_1_grad/range/delta*
+
+Tidx0*
+_output_shapes
+:*
+_class
+loc:@Mean_1
+}
+ gradients/Mean_1_grad/Fill/valueConst*
+value	B :*
+_class
+loc:@Mean_1*
+_output_shapes
+: *
+dtype0
+¡
+gradients/Mean_1_grad/FillFillgradients/Mean_1_grad/Shape_1 gradients/Mean_1_grad/Fill/value*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+÷
+#gradients/Mean_1_grad/DynamicStitchDynamicStitchgradients/Mean_1_grad/rangegradients/Mean_1_grad/modgradients/Mean_1_grad/Shapegradients/Mean_1_grad/Fill*
+T0*
+_class
+loc:@Mean_1*
+N*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+|
+gradients/Mean_1_grad/Maximum/yConst*
+dtype0*
+_output_shapes
+: *
+value	B :*
+_class
+loc:@Mean_1
+·
+gradients/Mean_1_grad/MaximumMaximum#gradients/Mean_1_grad/DynamicStitchgradients/Mean_1_grad/Maximum/y*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@Mean_1
+¯
+gradients/Mean_1_grad/floordivFloorDivgradients/Mean_1_grad/Shapegradients/Mean_1_grad/Maximum*
+T0*
+_class
+loc:@Mean_1*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+µ
+gradients/Mean_1_grad/ReshapeReshapegradients/mul_grad/Reshape#gradients/Mean_1_grad/DynamicStitch*
+_output_shapes
+:*
+Tshape0*
+_class
+loc:@Mean_1*
+T0
+±
+gradients/Mean_1_grad/TileTilegradients/Mean_1_grad/Reshapegradients/Mean_1_grad/floordiv*
+_output_shapes
+:*
+_class
+loc:@Mean_1*
+T0*
+
+Tmultiples0
+|
+gradients/Mean_1_grad/Shape_2ShapeMean*
+T0*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_1
+~
+gradients/Mean_1_grad/Shape_3ShapeMean_1*
+T0*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_1
+€
+gradients/Mean_1_grad/ConstConst*
+valueB: *
+_class
+loc:@Mean_1*
+_output_shapes
+:*
+dtype0
+·
+gradients/Mean_1_grad/ProdProdgradients/Mean_1_grad/Shape_2gradients/Mean_1_grad/Const*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_1
+‚
+gradients/Mean_1_grad/Const_1Const*
+_output_shapes
+:*
+dtype0*
+valueB: *
+_class
+loc:@Mean_1
+»
+gradients/Mean_1_grad/Prod_1Prodgradients/Mean_1_grad/Shape_3gradients/Mean_1_grad/Const_1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+~
+!gradients/Mean_1_grad/Maximum_1/yConst*
+value	B :*
+_class
+loc:@Mean_1*
+dtype0*
+_output_shapes
+: 
+§
+gradients/Mean_1_grad/Maximum_1Maximumgradients/Mean_1_grad/Prod_1!gradients/Mean_1_grad/Maximum_1/y*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+¥
+ gradients/Mean_1_grad/floordiv_1FloorDivgradients/Mean_1_grad/Prodgradients/Mean_1_grad/Maximum_1*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+
+gradients/Mean_1_grad/CastCast gradients/Mean_1_grad/floordiv_1*
+
+SrcT0*
+_output_shapes
+: *
+
+DstT0*
+_class
+loc:@Mean_1
+©
+gradients/Mean_1_grad/truedivRealDivgradients/Mean_1_grad/Tilegradients/Mean_1_grad/Cast*
+T0*
+_class
+loc:@Mean_1*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+x
+gradients/Mean_grad/ShapeShapeSquare*
+T0*
+out_type0*
+_class
+	loc:@Mean*
+_output_shapes
+:
+s
+gradients/Mean_grad/SizeConst*
+dtype0*
+_output_shapes
+: *
+value	B :*
+_class
+	loc:@Mean
+Š
+gradients/Mean_grad/addAddMean/reduction_indicesgradients/Mean_grad/Size*
+_class
+	loc:@Mean*
+_output_shapes
+: *
+T0
+
+gradients/Mean_grad/modFloorModgradients/Mean_grad/addgradients/Mean_grad/Size*
+_output_shapes
+: *
+_class
+	loc:@Mean*
+T0
+w
+gradients/Mean_grad/Shape_1Const*
+valueB *
+_class
+	loc:@Mean*
+_output_shapes
+: *
+dtype0
+z
+gradients/Mean_grad/range/startConst*
+_output_shapes
+: *
+dtype0*
+value	B : *
+_class
+	loc:@Mean
+z
+gradients/Mean_grad/range/deltaConst*
+_output_shapes
+: *
+dtype0*
+value	B :*
+_class
+	loc:@Mean
+¿
+gradients/Mean_grad/rangeRangegradients/Mean_grad/range/startgradients/Mean_grad/Sizegradients/Mean_grad/range/delta*
+_output_shapes
+:*
+_class
+	loc:@Mean*
+
+Tidx0
+y
+gradients/Mean_grad/Fill/valueConst*
+_output_shapes
+: *
+dtype0*
+value	B :*
+_class
+	loc:@Mean
+—
+gradients/Mean_grad/FillFillgradients/Mean_grad/Shape_1gradients/Mean_grad/Fill/value*
+T0*
+_output_shapes
+: *
+_class
+	loc:@Mean
+ë
+!gradients/Mean_grad/DynamicStitchDynamicStitchgradients/Mean_grad/rangegradients/Mean_grad/modgradients/Mean_grad/Shapegradients/Mean_grad/Fill*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+N*
+_class
+	loc:@Mean*
+T0
+x
+gradients/Mean_grad/Maximum/yConst*
+value	B :*
+_class
+	loc:@Mean*
+dtype0*
+_output_shapes
+: 
+¯
+gradients/Mean_grad/MaximumMaximum!gradients/Mean_grad/DynamicStitchgradients/Mean_grad/Maximum/y*
+_class
+	loc:@Mean*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+
+gradients/Mean_grad/floordivFloorDivgradients/Mean_grad/Shapegradients/Mean_grad/Maximum*
+_output_shapes
+:*
+_class
+	loc:@Mean*
+T0
+²
+gradients/Mean_grad/ReshapeReshapegradients/Mean_1_grad/truediv!gradients/Mean_grad/DynamicStitch*
+_output_shapes
+:*
+Tshape0*
+_class
+	loc:@Mean*
+T0
+Á
+gradients/Mean_grad/TileTilegradients/Mean_grad/Reshapegradients/Mean_grad/floordiv*0
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*
+_class
+	loc:@Mean*
+T0*
+
+Tmultiples0
+z
+gradients/Mean_grad/Shape_2ShapeSquare*
+T0*
+out_type0*
+_class
+	loc:@Mean*
+_output_shapes
+:
+x
+gradients/Mean_grad/Shape_3ShapeMean*
+T0*
+out_type0*
+_class
+	loc:@Mean*
+_output_shapes
+:
+|
+gradients/Mean_grad/ConstConst*
+_output_shapes
+:*
+dtype0*
+valueB: *
+_class
+	loc:@Mean
+¯
+gradients/Mean_grad/ProdProdgradients/Mean_grad/Shape_2gradients/Mean_grad/Const*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+	loc:@Mean*
+_output_shapes
+: 
+~
+gradients/Mean_grad/Const_1Const*
+_output_shapes
+:*
+dtype0*
+valueB: *
+_class
+	loc:@Mean
+³
+gradients/Mean_grad/Prod_1Prodgradients/Mean_grad/Shape_3gradients/Mean_grad/Const_1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+	loc:@Mean*
+_output_shapes
+: 
+z
+gradients/Mean_grad/Maximum_1/yConst*
+_output_shapes
+: *
+dtype0*
+value	B :*
+_class
+	loc:@Mean
+Ÿ
+gradients/Mean_grad/Maximum_1Maximumgradients/Mean_grad/Prod_1gradients/Mean_grad/Maximum_1/y*
+_output_shapes
+: *
+_class
+	loc:@Mean*
+T0
+
+gradients/Mean_grad/floordiv_1FloorDivgradients/Mean_grad/Prodgradients/Mean_grad/Maximum_1*
+_class
+	loc:@Mean*
+_output_shapes
+: *
+T0
+‰
+gradients/Mean_grad/CastCastgradients/Mean_grad/floordiv_1*
+
+SrcT0*
+_class
+	loc:@Mean*
+_output_shapes
+: *
+
+DstT0
+¥
+gradients/Mean_grad/truedivRealDivgradients/Mean_grad/Tilegradients/Mean_grad/Cast*
+T0*
+_class
+	loc:@Mean*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+™
+gradients/Square_grad/mul/xConst^gradients/Mean_grad/truediv*
+dtype0*
+_output_shapes
+: *
+valueB
+ *   @*
+_class
+loc:@Square
+
+gradients/Square_grad/mulMulgradients/Square_grad/mul/xsub*
+T0*
+_class
+loc:@Square*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+§
+gradients/Square_grad/mul_1Mulgradients/Mean_grad/truedivgradients/Square_grad/mul*
+_class
+loc:@Square*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+|
+gradients/sub_grad/ShapeShapedense_4/Relu*
+out_type0*
+_class
+
+loc:@sub*
+_output_shapes
+:*
+T0
+€
+gradients/sub_grad/Shape_1Shapedense_4_target*
+T0*
+out_type0*
+_class
+
+loc:@sub*
+_output_shapes
+:
+Ì
+(gradients/sub_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/sub_grad/Shapegradients/sub_grad/Shape_1*
+T0*
+_class
+
+loc:@sub*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ
+¼
+gradients/sub_grad/SumSumgradients/Square_grad/mul_1(gradients/sub_grad/BroadcastGradientArgs*
+_output_shapes
+:*
+_class
+
+loc:@sub*
+T0*
+
+Tidx0*
+	keep_dims( 
+¯
+gradients/sub_grad/ReshapeReshapegradients/sub_grad/Sumgradients/sub_grad/Shape*
+T0*
+Tshape0*
+_class
+
+loc:@sub*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+À
+gradients/sub_grad/Sum_1Sumgradients/Square_grad/mul_1*gradients/sub_grad/BroadcastGradientArgs:1*
+_output_shapes
+:*
+_class
+
+loc:@sub*
+T0*
+
+Tidx0*
+	keep_dims( 
+r
+gradients/sub_grad/NegNeggradients/sub_grad/Sum_1*
+_class
+
+loc:@sub*
+_output_shapes
+:*
+T0
+¼
+gradients/sub_grad/Reshape_1Reshapegradients/sub_grad/Neggradients/sub_grad/Shape_1*
+T0*
+Tshape0*
+_class
+
+loc:@sub*0
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+­
+$gradients/dense_4/Relu_grad/ReluGradReluGradgradients/sub_grad/Reshapedense_4/Relu*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_4/Relu
+¿
+*gradients/dense_4/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_4/Relu_grad/ReluGrad*"
+_class
+loc:@dense_4/BiasAdd*
+_output_shapes
+:*
+T0*
+data_formatNHWC
+ä
+$gradients/dense_4/MatMul_grad/MatMulMatMul$gradients/dense_4/Relu_grad/ReluGraddense_4/kernel/read*
+transpose_b(*!
+_class
+loc:@dense_4/MatMul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+Ö
+&gradients/dense_4/MatMul_grad/MatMul_1MatMuldense_3/Tanh$gradients/dense_4/Relu_grad/ReluGrad*
+transpose_b( *!
+_class
+loc:@dense_4/MatMul*
+_output_shapes
+
+:*
+transpose_a(*
+T0
+·
+$gradients/dense_3/Tanh_grad/TanhGradTanhGraddense_3/Tanh$gradients/dense_4/MatMul_grad/MatMul*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_3/Tanh
+¿
+*gradients/dense_3/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_3/Tanh_grad/TanhGrad*
+T0*"
+_class
+loc:@dense_3/BiasAdd*
+data_formatNHWC*
+_output_shapes
+:
+ä
+$gradients/dense_3/MatMul_grad/MatMulMatMul$gradients/dense_3/Tanh_grad/TanhGraddense_3/kernel/read*
+transpose_b(*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *!
+_class
+loc:@dense_3/MatMul
+Ö
+&gradients/dense_3/MatMul_grad/MatMul_1MatMuldense_2/Relu$gradients/dense_3/Tanh_grad/TanhGrad*
+transpose_b( *
+_output_shapes
+
+:*
+transpose_a(*!
+_class
+loc:@dense_3/MatMul*
+T0
+·
+$gradients/dense_2/Relu_grad/ReluGradReluGrad$gradients/dense_3/MatMul_grad/MatMuldense_2/Relu*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_2/Relu*
+T0
+¿
+*gradients/dense_2/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_2/Relu_grad/ReluGrad*
+data_formatNHWC*
+T0*
+_output_shapes
+:*"
+_class
+loc:@dense_2/BiasAdd
+ä
+$gradients/dense_2/MatMul_grad/MatMulMatMul$gradients/dense_2/Relu_grad/ReluGraddense_2/kernel/read*
+transpose_b(*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *!
+_class
+loc:@dense_2/MatMul*
+T0
+Ö
+&gradients/dense_2/MatMul_grad/MatMul_1MatMuldense_1/Tanh$gradients/dense_2/Relu_grad/ReluGrad*
+transpose_b( *
+T0*!
+_class
+loc:@dense_2/MatMul*
+_output_shapes
+
+:*
+transpose_a(
+·
+gradients/AddNAddNgradients/dense_1/Abs_grad/mul$gradients/dense_2/MatMul_grad/MatMul*
+N*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/Abs
+¡
+$gradients/dense_1/Tanh_grad/TanhGradTanhGraddense_1/Tanhgradients/AddN*
+T0*
+_class
+loc:@dense_1/Tanh*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+¿
+*gradients/dense_1/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_1/Tanh_grad/TanhGrad*
+T0*"
+_class
+loc:@dense_1/BiasAdd*
+data_formatNHWC*
+_output_shapes
+:
+ä
+$gradients/dense_1/MatMul_grad/MatMulMatMul$gradients/dense_1/Tanh_grad/TanhGraddense_1/kernel/read*
+transpose_b(*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *!
+_class
+loc:@dense_1/MatMul*
+T0
+Ñ
+&gradients/dense_1/MatMul_grad/MatMul_1MatMulinput_1$gradients/dense_1/Tanh_grad/TanhGrad*
+transpose_b( *
+_output_shapes
+
+:*
+transpose_a(*!
+_class
+loc:@dense_1/MatMul*
+T0
+T
+AssignAdd/valueConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+†
+	AssignAdd	AssignAdd
+iterationsAssignAdd/value*
+_class
+loc:@iterations*
+_output_shapes
+: *
+T0*
+use_locking( 
+L
+add_1/yConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+G
+add_1Additerations/readadd_1/y*
+T0*
+_output_shapes
+: 
+?
+PowPowbeta_2/readadd_1*
+_output_shapes
+: *
+T0
+L
+sub_1/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+;
+sub_1Subsub_1/xPow*
+T0*
+_output_shapes
+: 
+L
+Const_3Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+L
+Const_4Const*
+valueB
+ *  €*
+_output_shapes
+: *
+dtype0
+Q
+clip_by_value/MinimumMinimumsub_1Const_4*
+_output_shapes
+: *
+T0
+Y
+clip_by_valueMaximumclip_by_value/MinimumConst_3*
+T0*
+_output_shapes
+: 
+<
+SqrtSqrtclip_by_value*
+T0*
+_output_shapes
+: 
+A
+Pow_1Powbeta_1/readadd_1*
+T0*
+_output_shapes
+: 
+L
+sub_2/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+=
+sub_2Subsub_2/xPow_1*
+T0*
+_output_shapes
+: 
+B
+	truediv_1RealDivSqrtsub_2*
+T0*
+_output_shapes
+: 
+A
+mul_2Mullr/read	truediv_1*
+T0*
+_output_shapes
+: 
+T
+Const_5Const*
+valueB*    *
+dtype0*
+_output_shapes
+:
+t
+Variable
+VariableV2*
+_output_shapes
+:*
+	container *
+shape:*
+dtype0*
+shared_name 
+—
+Variable/AssignAssignVariableConst_5*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@Variable*
+T0*
+use_locking(
+e
+Variable/readIdentityVariable*
+_output_shapes
+:*
+_class
+loc:@Variable*
+T0
+\
+Const_6Const*
+valueB*    *
+_output_shapes
+
+:*
+dtype0
+~
+
+Variable_1
+VariableV2*
+_output_shapes
+
+:*
+	container *
+shape
+:*
+dtype0*
+shared_name 
+¡
+Variable_1/AssignAssign
+Variable_1Const_6*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_1
+o
+Variable_1/readIdentity
+Variable_1*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_1
+T
+Const_7Const*
+valueB*    *
+dtype0*
+_output_shapes
+:
+v
+
+Variable_2
+VariableV2*
+_output_shapes
+:*
+	container *
+dtype0*
+shared_name *
+shape:
+
+Variable_2/AssignAssign
+Variable_2Const_7*
+_class
+loc:@Variable_2*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+k
+Variable_2/readIdentity
+Variable_2*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_2
+\
+Const_8Const*
+valueB*    *
+_output_shapes
+
+:*
+dtype0
+~
+
+Variable_3
+VariableV2*
+_output_shapes
+
+:*
+	container *
+dtype0*
+shared_name *
+shape
+:
+¡
+Variable_3/AssignAssign
+Variable_3Const_8*
+use_locking(*
+T0*
+_class
+loc:@Variable_3*
+validate_shape(*
+_output_shapes
+
+:
+o
+Variable_3/readIdentity
+Variable_3*
+_class
+loc:@Variable_3*
+_output_shapes
+
+:*
+T0
+T
+Const_9Const*
+valueB*    *
+_output_shapes
+:*
+dtype0
+v
+
+Variable_4
+VariableV2*
+shape:*
+shared_name *
+dtype0*
+_output_shapes
+:*
+	container 
+
+Variable_4/AssignAssign
+Variable_4Const_9*
+_class
+loc:@Variable_4*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+k
+Variable_4/readIdentity
+Variable_4*
+T0*
+_class
+loc:@Variable_4*
+_output_shapes
+:
+]
+Const_10Const*
+valueB*    *
+dtype0*
+_output_shapes
+
+:
+~
+
+Variable_5
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¢
+Variable_5/AssignAssign
+Variable_5Const_10*
+use_locking(*
+T0*
+_class
+loc:@Variable_5*
+validate_shape(*
+_output_shapes
+
+:
+o
+Variable_5/readIdentity
+Variable_5*
+_class
+loc:@Variable_5*
+_output_shapes
+
+:*
+T0
+U
+Const_11Const*
+valueB*    *
+dtype0*
+_output_shapes
+:
+v
+
+Variable_6
+VariableV2*
+_output_shapes
+:*
+	container *
+dtype0*
+shared_name *
+shape:
+
+Variable_6/AssignAssign
+Variable_6Const_11*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_6
+k
+Variable_6/readIdentity
+Variable_6*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_6
+]
+Const_12Const*
+dtype0*
+_output_shapes
+
+:*
+valueB*    
+~
+
+Variable_7
+VariableV2*
+shared_name *
+dtype0*
+shape
+:*
+_output_shapes
+
+:*
+	container 
+¢
+Variable_7/AssignAssign
+Variable_7Const_12*
+_output_shapes
+
+:*
+validate_shape(*
+_class
+loc:@Variable_7*
+T0*
+use_locking(
+o
+Variable_7/readIdentity
+Variable_7*
+_class
+loc:@Variable_7*
+_output_shapes
+
+:*
+T0
+U
+Const_13Const*
+_output_shapes
+:*
+dtype0*
+valueB*    
+v
+
+Variable_8
+VariableV2*
+_output_shapes
+:*
+	container *
+shape:*
+dtype0*
+shared_name 
+
+Variable_8/AssignAssign
+Variable_8Const_13*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_8
+k
+Variable_8/readIdentity
+Variable_8*
+T0*
+_class
+loc:@Variable_8*
+_output_shapes
+:
+]
+Const_14Const*
+valueB*    *
+dtype0*
+_output_shapes
+
+:
+~
+
+Variable_9
+VariableV2*
+shared_name *
+dtype0*
+shape
+:*
+_output_shapes
+
+:*
+	container 
+¢
+Variable_9/AssignAssign
+Variable_9Const_14*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_9
+o
+Variable_9/readIdentity
+Variable_9*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_9
+U
+Const_15Const*
+_output_shapes
+:*
+dtype0*
+valueB*    
+w
+Variable_10
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+¡
+Variable_10/AssignAssignVariable_10Const_15*
+_class
+loc:@Variable_10*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+n
+Variable_10/readIdentityVariable_10*
+_output_shapes
+:*
+_class
+loc:@Variable_10*
+T0
+]
+Const_16Const*
+valueB*    *
+dtype0*
+_output_shapes
+
+:
+
+Variable_11
+VariableV2*
+shared_name *
+dtype0*
+shape
+:*
+_output_shapes
+
+:*
+	container 
+¥
+Variable_11/AssignAssignVariable_11Const_16*
+_output_shapes
+
+:*
+validate_shape(*
+_class
+loc:@Variable_11*
+T0*
+use_locking(
+r
+Variable_11/readIdentityVariable_11*
+_output_shapes
+
+:*
+_class
+loc:@Variable_11*
+T0
+U
+Const_17Const*
+valueB*    *
+_output_shapes
+:*
+dtype0
+w
+Variable_12
+VariableV2*
+_output_shapes
+:*
+	container *
+dtype0*
+shared_name *
+shape:
+¡
+Variable_12/AssignAssignVariable_12Const_17*
+_class
+loc:@Variable_12*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+n
+Variable_12/readIdentityVariable_12*
+T0*
+_class
+loc:@Variable_12*
+_output_shapes
+:
+]
+Const_18Const*
+valueB*    *
+_output_shapes
+
+:*
+dtype0
+
+Variable_13
+VariableV2*
+shared_name *
+dtype0*
+shape
+:*
+_output_shapes
+
+:*
+	container 
+¥
+Variable_13/AssignAssignVariable_13Const_18*
+_output_shapes
+
+:*
+validate_shape(*
+_class
+loc:@Variable_13*
+T0*
+use_locking(
+r
+Variable_13/readIdentityVariable_13*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_13
+U
+Const_19Const*
+_output_shapes
+:*
+dtype0*
+valueB*    
+w
+Variable_14
+VariableV2*
+_output_shapes
+:*
+	container *
+dtype0*
+shared_name *
+shape:
+¡
+Variable_14/AssignAssignVariable_14Const_19*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@Variable_14*
+T0*
+use_locking(
+n
+Variable_14/readIdentityVariable_14*
+_output_shapes
+:*
+_class
+loc:@Variable_14*
+T0
+]
+Const_20Const*
+dtype0*
+_output_shapes
+
+:*
+valueB*    
+
+Variable_15
+VariableV2*
+_output_shapes
+
+:*
+	container *
+dtype0*
+shared_name *
+shape
+:
+¥
+Variable_15/AssignAssignVariable_15Const_20*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_15
+r
+Variable_15/readIdentityVariable_15*
+_output_shapes
+
+:*
+_class
+loc:@Variable_15*
+T0
+M
+mul_3Mulbeta_1/readVariable/read*
+_output_shapes
+:*
+T0
+L
+sub_3/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+C
+sub_3Subsub_3/xbeta_1/read*
+T0*
+_output_shapes
+: 
+d
+mul_4Mulsub_3*gradients/dense_1/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+?
+add_2Addmul_3mul_4*
+T0*
+_output_shapes
+:
+O
+mul_5Mulbeta_2/readVariable_8/read*
+_output_shapes
+:*
+T0
+L
+sub_4/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+C
+sub_4Subsub_4/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_1Square*gradients/dense_1/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+B
+mul_6Mulsub_4Square_1*
+T0*
+_output_shapes
+:
+?
+add_3Addmul_5mul_6*
+T0*
+_output_shapes
+:
+?
+mul_7Mulmul_2add_2*
+_output_shapes
+:*
+T0
+M
+Const_21Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_22Const*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €
+X
+clip_by_value_1/MinimumMinimumadd_3Const_22*
+_output_shapes
+:*
+T0
+b
+clip_by_value_1Maximumclip_by_value_1/MinimumConst_21*
+T0*
+_output_shapes
+:
+D
+Sqrt_1Sqrtclip_by_value_1*
+_output_shapes
+:*
+T0
+L
+add_4/yConst*
+valueB
+ *wÌ+2*
+dtype0*
+_output_shapes
+: 
+B
+add_4AddSqrt_1add_4/y*
+_output_shapes
+:*
+T0
+G
+	truediv_2RealDivmul_7add_4*
+T0*
+_output_shapes
+:
+O
+sub_5Subdense_1/bias/read	truediv_2*
+T0*
+_output_shapes
+:
+Œ
+AssignAssignVariableadd_2*
+_class
+loc:@Variable*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+’
+Assign_1Assign
+Variable_8add_3*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_8
+–
+Assign_2Assigndense_1/biassub_5*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@dense_1/bias*
+T0*
+use_locking(
+S
+mul_8Mulbeta_1/readVariable_1/read*
+_output_shapes
+
+:*
+T0
+L
+sub_6/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+C
+sub_6Subsub_6/xbeta_1/read*
+T0*
+_output_shapes
+: 
+d
+mul_9Mulsub_6&gradients/dense_1/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+C
+add_5Addmul_8mul_9*
+T0*
+_output_shapes
+
+:
+T
+mul_10Mulbeta_2/readVariable_9/read*
+_output_shapes
+
+:*
+T0
+L
+sub_7/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+C
+sub_7Subsub_7/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_2Square&gradients/dense_1/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+G
+mul_11Mulsub_7Square_2*
+_output_shapes
+
+:*
+T0
+E
+add_6Addmul_10mul_11*
+_output_shapes
+
+:*
+T0
+D
+mul_12Mulmul_2add_5*
+_output_shapes
+
+:*
+T0
+M
+Const_23Const*
+dtype0*
+_output_shapes
+: *
+valueB
+ *    
+M
+Const_24Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €
+\
+clip_by_value_2/MinimumMinimumadd_6Const_24*
+T0*
+_output_shapes
+
+:
+f
+clip_by_value_2Maximumclip_by_value_2/MinimumConst_23*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_2Sqrtclip_by_value_2*
+T0*
+_output_shapes
+
+:
+L
+add_7/yConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *wÌ+2
+F
+add_7AddSqrt_2add_7/y*
+_output_shapes
+
+:*
+T0
+L
+	truediv_3RealDivmul_12add_7*
+T0*
+_output_shapes
+
+:
+U
+sub_8Subdense_1/kernel/read	truediv_3*
+_output_shapes
+
+:*
+T0
+–
+Assign_3Assign
+Variable_1add_5*
+use_locking(*
+T0*
+_class
+loc:@Variable_1*
+validate_shape(*
+_output_shapes
+
+:
+–
+Assign_4Assign
+Variable_9add_6*
+use_locking(*
+T0*
+_class
+loc:@Variable_9*
+validate_shape(*
+_output_shapes
+
+:
+
+Assign_5Assigndense_1/kernelsub_8*
+use_locking(*
+T0*!
+_class
+loc:@dense_1/kernel*
+validate_shape(*
+_output_shapes
+
+:
+P
+mul_13Mulbeta_1/readVariable_2/read*
+T0*
+_output_shapes
+:
+L
+sub_9/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+C
+sub_9Subsub_9/xbeta_1/read*
+T0*
+_output_shapes
+: 
+e
+mul_14Mulsub_9*gradients/dense_2/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+A
+add_8Addmul_13mul_14*
+_output_shapes
+:*
+T0
+Q
+mul_15Mulbeta_2/readVariable_10/read*
+_output_shapes
+:*
+T0
+M
+sub_10/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_10Subsub_10/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_3Square*gradients/dense_2/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+D
+mul_16Mulsub_10Square_3*
+T0*
+_output_shapes
+:
+A
+add_9Addmul_15mul_16*
+T0*
+_output_shapes
+:
+@
+mul_17Mulmul_2add_8*
+T0*
+_output_shapes
+:
+M
+Const_25Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_26Const*
+valueB
+ *  €*
+_output_shapes
+: *
+dtype0
+X
+clip_by_value_3/MinimumMinimumadd_9Const_26*
+T0*
+_output_shapes
+:
+b
+clip_by_value_3Maximumclip_by_value_3/MinimumConst_25*
+_output_shapes
+:*
+T0
+D
+Sqrt_3Sqrtclip_by_value_3*
+_output_shapes
+:*
+T0
+M
+add_10/yConst*
+valueB
+ *wÌ+2*
+dtype0*
+_output_shapes
+: 
+D
+add_10AddSqrt_3add_10/y*
+T0*
+_output_shapes
+:
+I
+	truediv_4RealDivmul_17add_10*
+_output_shapes
+:*
+T0
+P
+sub_11Subdense_2/bias/read	truediv_4*
+T0*
+_output_shapes
+:
+’
+Assign_6Assign
+Variable_2add_8*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@Variable_2*
+T0*
+use_locking(
+”
+Assign_7AssignVariable_10add_9*
+use_locking(*
+T0*
+_class
+loc:@Variable_10*
+validate_shape(*
+_output_shapes
+:
+—
+Assign_8Assigndense_2/biassub_11*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_2/bias
+T
+mul_18Mulbeta_1/readVariable_3/read*
+_output_shapes
+
+:*
+T0
+M
+sub_12/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+E
+sub_12Subsub_12/xbeta_1/read*
+_output_shapes
+: *
+T0
+f
+mul_19Mulsub_12&gradients/dense_2/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+F
+add_11Addmul_18mul_19*
+_output_shapes
+
+:*
+T0
+U
+mul_20Mulbeta_2/readVariable_11/read*
+_output_shapes
+
+:*
+T0
+M
+sub_13/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+E
+sub_13Subsub_13/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_4Square&gradients/dense_2/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+H
+mul_21Mulsub_13Square_4*
+T0*
+_output_shapes
+
+:
+F
+add_12Addmul_20mul_21*
+T0*
+_output_shapes
+
+:
+E
+mul_22Mulmul_2add_11*
+T0*
+_output_shapes
+
+:
+M
+Const_27Const*
+valueB
+ *    *
+_output_shapes
+: *
+dtype0
+M
+Const_28Const*
+valueB
+ *  €*
+dtype0*
+_output_shapes
+: 
+]
+clip_by_value_4/MinimumMinimumadd_12Const_28*
+_output_shapes
+
+:*
+T0
+f
+clip_by_value_4Maximumclip_by_value_4/MinimumConst_27*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_4Sqrtclip_by_value_4*
+T0*
+_output_shapes
+
+:
+M
+add_13/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+H
+add_13AddSqrt_4add_13/y*
+_output_shapes
+
+:*
+T0
+M
+	truediv_5RealDivmul_22add_13*
+_output_shapes
+
+:*
+T0
+V
+sub_14Subdense_2/kernel/read	truediv_5*
+T0*
+_output_shapes
+
+:
+—
+Assign_9Assign
+Variable_3add_11*
+use_locking(*
+T0*
+_class
+loc:@Variable_3*
+validate_shape(*
+_output_shapes
+
+:
+š
+	Assign_10AssignVariable_11add_12*
+_class
+loc:@Variable_11*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+ 
+	Assign_11Assigndense_2/kernelsub_14*!
+_class
+loc:@dense_2/kernel*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+P
+mul_23Mulbeta_1/readVariable_4/read*
+_output_shapes
+:*
+T0
+M
+sub_15/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+E
+sub_15Subsub_15/xbeta_1/read*
+T0*
+_output_shapes
+: 
+f
+mul_24Mulsub_15*gradients/dense_3/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+B
+add_14Addmul_23mul_24*
+T0*
+_output_shapes
+:
+Q
+mul_25Mulbeta_2/readVariable_12/read*
+T0*
+_output_shapes
+:
+M
+sub_16/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_16Subsub_16/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_5Square*gradients/dense_3/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+D
+mul_26Mulsub_16Square_5*
+_output_shapes
+:*
+T0
+B
+add_15Addmul_25mul_26*
+T0*
+_output_shapes
+:
+A
+mul_27Mulmul_2add_14*
+T0*
+_output_shapes
+:
+M
+Const_29Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+M
+Const_30Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €
+Y
+clip_by_value_5/MinimumMinimumadd_15Const_30*
+_output_shapes
+:*
+T0
+b
+clip_by_value_5Maximumclip_by_value_5/MinimumConst_29*
+T0*
+_output_shapes
+:
+D
+Sqrt_5Sqrtclip_by_value_5*
+T0*
+_output_shapes
+:
+M
+add_16/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+D
+add_16AddSqrt_5add_16/y*
+_output_shapes
+:*
+T0
+I
+	truediv_6RealDivmul_27add_16*
+_output_shapes
+:*
+T0
+P
+sub_17Subdense_3/bias/read	truediv_6*
+T0*
+_output_shapes
+:
+”
+	Assign_12Assign
+Variable_4add_14*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_4
+–
+	Assign_13AssignVariable_12add_15*
+use_locking(*
+T0*
+_class
+loc:@Variable_12*
+validate_shape(*
+_output_shapes
+:
+˜
+	Assign_14Assigndense_3/biassub_17*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_3/bias
+T
+mul_28Mulbeta_1/readVariable_5/read*
+_output_shapes
+
+:*
+T0
+M
+sub_18/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+E
+sub_18Subsub_18/xbeta_1/read*
+T0*
+_output_shapes
+: 
+f
+mul_29Mulsub_18&gradients/dense_3/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+F
+add_17Addmul_28mul_29*
+_output_shapes
+
+:*
+T0
+U
+mul_30Mulbeta_2/readVariable_13/read*
+T0*
+_output_shapes
+
+:
+M
+sub_19/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_19Subsub_19/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_6Square&gradients/dense_3/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+H
+mul_31Mulsub_19Square_6*
+T0*
+_output_shapes
+
+:
+F
+add_18Addmul_30mul_31*
+T0*
+_output_shapes
+
+:
+E
+mul_32Mulmul_2add_17*
+_output_shapes
+
+:*
+T0
+M
+Const_31Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+M
+Const_32Const*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €
+]
+clip_by_value_6/MinimumMinimumadd_18Const_32*
+_output_shapes
+
+:*
+T0
+f
+clip_by_value_6Maximumclip_by_value_6/MinimumConst_31*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_6Sqrtclip_by_value_6*
+T0*
+_output_shapes
+
+:
+M
+add_19/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+H
+add_19AddSqrt_6add_19/y*
+_output_shapes
+
+:*
+T0
+M
+	truediv_7RealDivmul_32add_19*
+_output_shapes
+
+:*
+T0
+V
+sub_20Subdense_3/kernel/read	truediv_7*
+T0*
+_output_shapes
+
+:
+˜
+	Assign_15Assign
+Variable_5add_17*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_5
+š
+	Assign_16AssignVariable_13add_18*
+_class
+loc:@Variable_13*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+ 
+	Assign_17Assigndense_3/kernelsub_20*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*!
+_class
+loc:@dense_3/kernel
+P
+mul_33Mulbeta_1/readVariable_6/read*
+T0*
+_output_shapes
+:
+M
+sub_21/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_21Subsub_21/xbeta_1/read*
+_output_shapes
+: *
+T0
+f
+mul_34Mulsub_21*gradients/dense_4/BiasAdd_grad/BiasAddGrad*
+_output_shapes
+:*
+T0
+B
+add_20Addmul_33mul_34*
+_output_shapes
+:*
+T0
+Q
+mul_35Mulbeta_2/readVariable_14/read*
+_output_shapes
+:*
+T0
+M
+sub_22/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_22Subsub_22/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_7Square*gradients/dense_4/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+D
+mul_36Mulsub_22Square_7*
+T0*
+_output_shapes
+:
+B
+add_21Addmul_35mul_36*
+_output_shapes
+:*
+T0
+A
+mul_37Mulmul_2add_20*
+_output_shapes
+:*
+T0
+M
+Const_33Const*
+valueB
+ *    *
+_output_shapes
+: *
+dtype0
+M
+Const_34Const*
+valueB
+ *  €*
+dtype0*
+_output_shapes
+: 
+Y
+clip_by_value_7/MinimumMinimumadd_21Const_34*
+T0*
+_output_shapes
+:
+b
+clip_by_value_7Maximumclip_by_value_7/MinimumConst_33*
+_output_shapes
+:*
+T0
+D
+Sqrt_7Sqrtclip_by_value_7*
+_output_shapes
+:*
+T0
+M
+add_22/yConst*
+valueB
+ *wÌ+2*
+dtype0*
+_output_shapes
+: 
+D
+add_22AddSqrt_7add_22/y*
+_output_shapes
+:*
+T0
+I
+	truediv_8RealDivmul_37add_22*
+T0*
+_output_shapes
+:
+P
+sub_23Subdense_4/bias/read	truediv_8*
+T0*
+_output_shapes
+:
+”
+	Assign_18Assign
+Variable_6add_20*
+_class
+loc:@Variable_6*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+–
+	Assign_19AssignVariable_14add_21*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_14
+˜
+	Assign_20Assigndense_4/biassub_23*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@dense_4/bias*
+T0*
+use_locking(
+T
+mul_38Mulbeta_1/readVariable_7/read*
+T0*
+_output_shapes
+
+:
+M
+sub_24/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_24Subsub_24/xbeta_1/read*
+T0*
+_output_shapes
+: 
+f
+mul_39Mulsub_24&gradients/dense_4/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+F
+add_23Addmul_38mul_39*
+T0*
+_output_shapes
+
+:
+U
+mul_40Mulbeta_2/readVariable_15/read*
+_output_shapes
+
+:*
+T0
+M
+sub_25/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+E
+sub_25Subsub_25/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_8Square&gradients/dense_4/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+H
+mul_41Mulsub_25Square_8*
+_output_shapes
+
+:*
+T0
+F
+add_24Addmul_40mul_41*
+_output_shapes
+
+:*
+T0
+E
+mul_42Mulmul_2add_23*
+T0*
+_output_shapes
+
+:
+M
+Const_35Const*
+dtype0*
+_output_shapes
+: *
+valueB
+ *    
+M
+Const_36Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €
+]
+clip_by_value_8/MinimumMinimumadd_24Const_36*
+_output_shapes
+
+:*
+T0
+f
+clip_by_value_8Maximumclip_by_value_8/MinimumConst_35*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_8Sqrtclip_by_value_8*
+_output_shapes
+
+:*
+T0
+M
+add_25/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+H
+add_25AddSqrt_8add_25/y*
+T0*
+_output_shapes
+
+:
+M
+	truediv_9RealDivmul_42add_25*
+T0*
+_output_shapes
+
+:
+V
+sub_26Subdense_4/kernel/read	truediv_9*
+T0*
+_output_shapes
+
+:
+˜
+	Assign_21Assign
+Variable_7add_23*
+_class
+loc:@Variable_7*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+š
+	Assign_22AssignVariable_15add_24*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_15
+ 
+	Assign_23Assigndense_4/kernelsub_26*
+_output_shapes
+
+:*
+validate_shape(*!
+_class
+loc:@dense_4/kernel*
+T0*
+use_locking(
+Ã
+group_deps_1NoOp^add^Mean_4
+^AssignAdd^Assign	^Assign_1	^Assign_2	^Assign_3	^Assign_4	^Assign_5	^Assign_6	^Assign_7	^Assign_8	^Assign_9
+^Assign_10
+^Assign_11
+^Assign_12
+^Assign_13
+^Assign_14
+^Assign_15
+^Assign_16
+^Assign_17
+^Assign_18
+^Assign_19
+^Assign_20
+^Assign_21
+^Assign_22
+^Assign_23
+×
+initNoOp^dense_1/kernel/Assign^dense_1/bias/Assign^dense_2/kernel/Assign^dense_2/bias/Assign^dense_3/kernel/Assign^dense_3/bias/Assign^dense_4/kernel/Assign^dense_4/bias/Assign^iterations/Assign
+^lr/Assign^beta_1/Assign^beta_2/Assign^decay/Assign^Variable/Assign^Variable_1/Assign^Variable_2/Assign^Variable_3/Assign^Variable_4/Assign^Variable_5/Assign^Variable_6/Assign^Variable_7/Assign^Variable_8/Assign^Variable_9/Assign^Variable_10/Assign^Variable_11/Assign^Variable_12/Assign^Variable_13/Assign^Variable_14/Assign^Variable_15/Assign"úĞÚ-$     J¤p¦	£$NDOÖAJ È
+¬†
++
+Abs
+x"T
+y"T"
+Ttype:	
+2	
+9
+Add
+x"T
+y"T
+z"T"
+Ttype:
+2	
+S
+AddN
+inputs"T*N
+sum"T"
+Nint(0"
+Ttype:
+2	€
+l
+ArgMax
+
+input"T
+	dimension"Tidx
+
+output	"
+Ttype:
+2	"
+Tidxtype0:
+2	
+x
+Assign
+ref"T€
+
+value"T
+
+output_ref"T€"	
+Ttype"
+validate_shapebool("
+use_lockingbool(˜
+p
+	AssignAdd
+ref"T€
+
+value"T
+
+output_ref"T€"
+Ttype:
+2	"
+use_lockingbool( 
+{
+BiasAdd
+
+value"T	
+bias"T
+output"T"
+Ttype:
+2	"-
+data_formatstringNHWC:
+NHWCNCHW
+{
+BiasAddGrad
+out_backprop"T
+output"T"
+Ttype:
+2	"-
+data_formatstringNHWC:
+NHWCNCHW
+R
+BroadcastGradientArgs
+s0"T
+s1"T
+r0"T
+r1"T"
+Ttype0:
+2	
+8
+Cast	
+x"SrcT	
+y"DstT"
+SrcTtype"
+DstTtype
+8
+Const
+output"dtype"
+valuetensor"
+dtypetype
+S
+DynamicStitch
+indices*N
+data"T*N
+merged"T"
+Nint(0"	
+Ttype
+A
+Equal
+x"T
+y"T
+z
+"
+Ttype:
+2	
+
+4
+Fill
+dims
+
+value"T
+output"T"	
+Ttype
+>
+FloorDiv
+x"T
+y"T
+z"T"
+Ttype:
+2	
+7
+FloorMod
+x"T
+y"T
+z"T"
+Ttype:
+2	
+.
+Identity
+
+input"T
+output"T"	
+Ttype
+o
+MatMul
+a"T
+b"T
+product"T"
+transpose_abool( "
+transpose_bbool( "
+Ttype:
+
+2
+:
+Maximum
+x"T
+y"T
+z"T"
+Ttype:	
+2	
+Š
+Mean
+
+input"T
+reduction_indices"Tidx
+output"T"
+	keep_dimsbool( "
+Ttype:
+2	"
+Tidxtype0:
+2	
+:
+Minimum
+x"T
+y"T
+z"T"
+Ttype:	
+2	
+<
+Mul
+x"T
+y"T
+z"T"
+Ttype:
+2	
+-
+Neg
+x"T
+y"T"
+Ttype:
+	2	
+
+NoOp
+D
+NotEqual
+x"T
+y"T
+z
+"
+Ttype:
+2	
+
+C
+Placeholder
+output"dtype"
+dtypetype"
+shapeshape:
+5
+Pow
+x"T
+y"T
+z"T"
+Ttype:
+	2	
+Š
+Prod
+
+input"T
+reduction_indices"Tidx
+output"T"
+	keep_dimsbool( "
+Ttype:
+2	"
+Tidxtype0:
+2	
+}
+RandomUniform
+
+shape"T
+output"dtype"
+seedint "
+seed2int "
+dtypetype:
+2"
+Ttype:
+2	ˆ
+`
+Range
+start"Tidx
+limit"Tidx
+delta"Tidx
+output"Tidx"
+Tidxtype0:
+2	
+=
+RealDiv
+x"T
+y"T
+z"T"
+Ttype:
+2	
+A
+Relu
+features"T
+activations"T"
+Ttype:
+2		
+S
+ReluGrad
+	gradients"T
+features"T
+	backprops"T"
+Ttype:
+2		
+[
+Reshape
+tensor"T
+shape"Tshape
+output"T"	
+Ttype"
+Tshapetype0:
+2	
+P
+Shape
+
+input"T
+output"out_type"	
+Ttype"
+out_typetype0:
+2	
+.
+Sign
+x"T
+y"T"
+Ttype:
+	2	
+,
+Sqrt
+x"T
+y"T"
+Ttype:	
+2
+0
+Square
+x"T
+y"T"
+Ttype:
+	2	
+5
+Sub
+x"T
+y"T
+z"T"
+Ttype:
+	2	
+‰
+Sum
+
+input"T
+reduction_indices"Tidx
+output"T"
+	keep_dimsbool( "
+Ttype:
+2	"
+Tidxtype0:
+2	
+,
+Tanh
+x"T
+y"T"
+Ttype:	
+2
+8
+TanhGrad
+x"T
+y"T
+z"T"
+Ttype:	
+2
+c
+Tile
+
+input"T
+	multiples"
+Tmultiples
+output"T"	
+Ttype"
+
+Tmultiplestype0:
+2	
+s
+
+VariableV2
+ref"dtype€"
+shapeshape"
+dtypetype"
+	containerstring "
+shared_namestring ˆ*	1.2.0-rc22v1.2.0-rc1-24-gce1d6ecÕ“
+j
+input_1Placeholder*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+dtype0*
+shape:ÿÿÿÿÿÿÿÿÿ
+m
+dense_1/random_uniform/shapeConst*
+dtype0*
+_output_shapes
+:*
+valueB"      
+_
+dense_1/random_uniform/minConst*
+valueB
+ *A¿¾*
+dtype0*
+_output_shapes
+: 
+_
+dense_1/random_uniform/maxConst*
+valueB
+ *A¿>*
+dtype0*
+_output_shapes
+: 
+§
+$dense_1/random_uniform/RandomUniformRandomUniformdense_1/random_uniform/shape*
+_output_shapes
+
+:*
+seed2ÂŸ*
+dtype0*
+T0*
+seed±ÿå)
+z
+dense_1/random_uniform/subSubdense_1/random_uniform/maxdense_1/random_uniform/min*
+_output_shapes
+: *
+T0
+Œ
+dense_1/random_uniform/mulMul$dense_1/random_uniform/RandomUniformdense_1/random_uniform/sub*
+_output_shapes
+
+:*
+T0
+~
+dense_1/random_uniformAdddense_1/random_uniform/muldense_1/random_uniform/min*
+T0*
+_output_shapes
+
+:
+‚
+dense_1/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_1/kernel/AssignAssigndense_1/kerneldense_1/random_uniform*
+use_locking(*
+T0*!
+_class
+loc:@dense_1/kernel*
+validate_shape(*
+_output_shapes
+
+:
+{
+dense_1/kernel/readIdentitydense_1/kernel*
+_output_shapes
+
+:*!
+_class
+loc:@dense_1/kernel*
+T0
+Z
+dense_1/ConstConst*
+valueB*    *
+_output_shapes
+:*
+dtype0
+x
+dense_1/bias
+VariableV2*
+shape:*
+shared_name *
+dtype0*
+_output_shapes
+:*
+	container 
+©
+dense_1/bias/AssignAssigndense_1/biasdense_1/Const*
+use_locking(*
+T0*
+_class
+loc:@dense_1/bias*
+validate_shape(*
+_output_shapes
+:
+q
+dense_1/bias/readIdentitydense_1/bias*
+_output_shapes
+:*
+_class
+loc:@dense_1/bias*
+T0
+
+dense_1/MatMulMatMulinput_1dense_1/kernel/read*
+transpose_b( *
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( 
+†
+dense_1/BiasAddBiasAdddense_1/MatMuldense_1/bias/read*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+data_formatNHWC*
+T0
+W
+dense_1/TanhTanhdense_1/BiasAdd*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+R
+dense_1/AbsAbsdense_1/Tanh*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+R
+dense_1/mul/xConst*
+valueB
+ *·Ñ8*
+dtype0*
+_output_shapes
+: 
+`
+dense_1/mulMuldense_1/mul/xdense_1/Abs*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+`
+dense_1/Const_1Const*
+_output_shapes
+:*
+dtype0*
+valueB"       
+n
+dense_1/SumSumdense_1/muldense_1/Const_1*
+_output_shapes
+: *
+T0*
+	keep_dims( *
+
+Tidx0
+R
+dense_1/add/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+O
+dense_1/addAdddense_1/add/xdense_1/Sum*
+T0*
+_output_shapes
+: 
+m
+dense_2/random_uniform/shapeConst*
+valueB"      *
+dtype0*
+_output_shapes
+:
+_
+dense_2/random_uniform/minConst*
+valueB
+ *wÖ¿*
+dtype0*
+_output_shapes
+: 
+_
+dense_2/random_uniform/maxConst*
+valueB
+ *wÖ?*
+_output_shapes
+: *
+dtype0
+¨
+$dense_2/random_uniform/RandomUniformRandomUniformdense_2/random_uniform/shape*
+_output_shapes
+
+:*
+seed2²Äã*
+T0*
+seed±ÿå)*
+dtype0
+z
+dense_2/random_uniform/subSubdense_2/random_uniform/maxdense_2/random_uniform/min*
+T0*
+_output_shapes
+: 
+Œ
+dense_2/random_uniform/mulMul$dense_2/random_uniform/RandomUniformdense_2/random_uniform/sub*
+_output_shapes
+
+:*
+T0
+~
+dense_2/random_uniformAdddense_2/random_uniform/muldense_2/random_uniform/min*
+T0*
+_output_shapes
+
+:
+‚
+dense_2/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_2/kernel/AssignAssigndense_2/kerneldense_2/random_uniform*
+use_locking(*
+T0*!
+_class
+loc:@dense_2/kernel*
+validate_shape(*
+_output_shapes
+
+:
+{
+dense_2/kernel/readIdentitydense_2/kernel*
+_output_shapes
+
+:*!
+_class
+loc:@dense_2/kernel*
+T0
+Z
+dense_2/ConstConst*
+valueB*    *
+_output_shapes
+:*
+dtype0
+x
+dense_2/bias
+VariableV2*
+_output_shapes
+:*
+	container *
+shape:*
+dtype0*
+shared_name 
+©
+dense_2/bias/AssignAssigndense_2/biasdense_2/Const*
+use_locking(*
+T0*
+_class
+loc:@dense_2/bias*
+validate_shape(*
+_output_shapes
+:
+q
+dense_2/bias/readIdentitydense_2/bias*
+_output_shapes
+:*
+_class
+loc:@dense_2/bias*
+T0
+“
+dense_2/MatMulMatMuldense_1/Tanhdense_2/kernel/read*
+transpose_b( *'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+†
+dense_2/BiasAddBiasAdddense_2/MatMuldense_2/bias/read*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0*
+data_formatNHWC
+W
+dense_2/ReluReludense_2/BiasAdd*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+m
+dense_3/random_uniform/shapeConst*
+valueB"      *
+dtype0*
+_output_shapes
+:
+_
+dense_3/random_uniform/minConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *wÖ¿
+_
+dense_3/random_uniform/maxConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *wÖ?
+¨
+$dense_3/random_uniform/RandomUniformRandomUniformdense_3/random_uniform/shape*
+_output_shapes
+
+:*
+seed2¢×æ*
+dtype0*
+T0*
+seed±ÿå)
+z
+dense_3/random_uniform/subSubdense_3/random_uniform/maxdense_3/random_uniform/min*
+T0*
+_output_shapes
+: 
+Œ
+dense_3/random_uniform/mulMul$dense_3/random_uniform/RandomUniformdense_3/random_uniform/sub*
+T0*
+_output_shapes
+
+:
+~
+dense_3/random_uniformAdddense_3/random_uniform/muldense_3/random_uniform/min*
+_output_shapes
+
+:*
+T0
+‚
+dense_3/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_3/kernel/AssignAssigndense_3/kerneldense_3/random_uniform*
+use_locking(*
+T0*!
+_class
+loc:@dense_3/kernel*
+validate_shape(*
+_output_shapes
+
+:
+{
+dense_3/kernel/readIdentitydense_3/kernel*
+T0*
+_output_shapes
+
+:*!
+_class
+loc:@dense_3/kernel
+Z
+dense_3/ConstConst*
+_output_shapes
+:*
+dtype0*
+valueB*    
+x
+dense_3/bias
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+©
+dense_3/bias/AssignAssigndense_3/biasdense_3/Const*
+_class
+loc:@dense_3/bias*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+q
+dense_3/bias/readIdentitydense_3/bias*
+T0*
+_class
+loc:@dense_3/bias*
+_output_shapes
+:
+“
+dense_3/MatMulMatMuldense_2/Reludense_3/kernel/read*
+transpose_b( *'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+†
+dense_3/BiasAddBiasAdddense_3/MatMuldense_3/bias/read*
+data_formatNHWC*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+W
+dense_3/TanhTanhdense_3/BiasAdd*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+m
+dense_4/random_uniform/shapeConst*
+dtype0*
+_output_shapes
+:*
+valueB"      
+_
+dense_4/random_uniform/minConst*
+valueB
+ *A¿¾*
+dtype0*
+_output_shapes
+: 
+_
+dense_4/random_uniform/maxConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *A¿>
+¨
+$dense_4/random_uniform/RandomUniformRandomUniformdense_4/random_uniform/shape*
+seed±ÿå)*
+T0*
+dtype0*
+_output_shapes
+
+:*
+seed2™‚¡
+z
+dense_4/random_uniform/subSubdense_4/random_uniform/maxdense_4/random_uniform/min*
+_output_shapes
+: *
+T0
+Œ
+dense_4/random_uniform/mulMul$dense_4/random_uniform/RandomUniformdense_4/random_uniform/sub*
+_output_shapes
+
+:*
+T0
+~
+dense_4/random_uniformAdddense_4/random_uniform/muldense_4/random_uniform/min*
+_output_shapes
+
+:*
+T0
+‚
+dense_4/kernel
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¼
+dense_4/kernel/AssignAssigndense_4/kerneldense_4/random_uniform*
+use_locking(*
+T0*!
+_class
+loc:@dense_4/kernel*
+validate_shape(*
+_output_shapes
+
+:
+{
+dense_4/kernel/readIdentitydense_4/kernel*
+_output_shapes
+
+:*!
+_class
+loc:@dense_4/kernel*
+T0
+Z
+dense_4/ConstConst*
+_output_shapes
+:*
+dtype0*
+valueB*    
+x
+dense_4/bias
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+©
+dense_4/bias/AssignAssigndense_4/biasdense_4/Const*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@dense_4/bias*
+T0*
+use_locking(
+q
+dense_4/bias/readIdentitydense_4/bias*
+_class
+loc:@dense_4/bias*
+_output_shapes
+:*
+T0
+“
+dense_4/MatMulMatMuldense_3/Tanhdense_4/kernel/read*
+transpose_b( *'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+†
+dense_4/BiasAddBiasAdddense_4/MatMuldense_4/bias/read*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+data_formatNHWC*
+T0
+W
+dense_4/ReluReludense_4/BiasAdd*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+]
+iterations/initial_valueConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *    
+n
+
+iterations
+VariableV2*
+_output_shapes
+: *
+	container *
+shape: *
+dtype0*
+shared_name 
+ª
+iterations/AssignAssign
+iterationsiterations/initial_value*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+: *
+_class
+loc:@iterations
+g
+iterations/readIdentity
+iterations*
+T0*
+_class
+loc:@iterations*
+_output_shapes
+: 
+U
+lr/initial_valueConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *oƒ:
+f
+lr
+VariableV2*
+shared_name *
+dtype0*
+shape: *
+_output_shapes
+: *
+	container 
+Š
+	lr/AssignAssignlrlr/initial_value*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+: *
+_class
+	loc:@lr
+O
+lr/readIdentitylr*
+_output_shapes
+: *
+_class
+	loc:@lr*
+T0
+Y
+beta_1/initial_valueConst*
+valueB
+ *fff?*
+dtype0*
+_output_shapes
+: 
+j
+beta_1
+VariableV2*
+shape: *
+shared_name *
+dtype0*
+_output_shapes
+: *
+	container 
+š
+beta_1/AssignAssignbeta_1beta_1/initial_value*
+use_locking(*
+T0*
+_class
+loc:@beta_1*
+validate_shape(*
+_output_shapes
+: 
+[
+beta_1/readIdentitybeta_1*
+_class
+loc:@beta_1*
+_output_shapes
+: *
+T0
+Y
+beta_2/initial_valueConst*
+valueB
+ *w¾?*
+dtype0*
+_output_shapes
+: 
+j
+beta_2
+VariableV2*
+_output_shapes
+: *
+	container *
+shape: *
+dtype0*
+shared_name 
+š
+beta_2/AssignAssignbeta_2beta_2/initial_value*
+_class
+loc:@beta_2*
+_output_shapes
+: *
+T0*
+validate_shape(*
+use_locking(
+[
+beta_2/readIdentitybeta_2*
+_output_shapes
+: *
+_class
+loc:@beta_2*
+T0
+X
+decay/initial_valueConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+i
+decay
+VariableV2*
+shape: *
+shared_name *
+dtype0*
+_output_shapes
+: *
+	container 
+–
+decay/AssignAssigndecaydecay/initial_value*
+_output_shapes
+: *
+validate_shape(*
+_class
+
+loc:@decay*
+T0*
+use_locking(
+X
+
+decay/readIdentitydecay*
+T0*
+_output_shapes
+: *
+_class
+
+loc:@decay
+q
+dense_4_sample_weightsPlaceholder*
+dtype0*
+shape:ÿÿÿÿÿÿÿÿÿ*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+ƒ
+dense_4_targetPlaceholder*
+dtype0*%
+shape:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*0
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+Z
+subSubdense_4/Reludense_4_target*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+G
+SquareSquaresub*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+X
+Mean/reduction_indicesConst*
+_output_shapes
+: *
+dtype0*
+value	B :
+w
+MeanMeanSquareMean/reduction_indices*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0*
+	keep_dims( *
+
+Tidx0
+[
+Mean_1/reduction_indicesConst*
+_output_shapes
+: *
+dtype0*
+valueB 
+y
+Mean_1MeanMeanMean_1/reduction_indices*
+	keep_dims( *
+
+Tidx0*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+X
+mulMulMean_1dense_4_sample_weights*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+O
+
+NotEqual/yConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+f
+NotEqualNotEqualdense_4_sample_weights
+NotEqual/y*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+S
+CastCastNotEqual*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+
+DstT0*
+
+SrcT0
+
+O
+ConstConst*
+valueB: *
+dtype0*
+_output_shapes
+:
+Y
+Mean_2MeanCastConst*
+	keep_dims( *
+
+Tidx0*
+T0*
+_output_shapes
+: 
+M
+truedivRealDivmulMean_2*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+Q
+Const_1Const*
+_output_shapes
+:*
+dtype0*
+valueB: 
+^
+Mean_3MeantruedivConst_1*
+_output_shapes
+: *
+T0*
+	keep_dims( *
+
+Tidx0
+L
+mul_1/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+>
+mul_1Mulmul_1/xMean_3*
+_output_shapes
+: *
+T0
+?
+addAddmul_1dense_1/add*
+_output_shapes
+: *
+T0
+R
+ArgMax/dimensionConst*
+value	B :*
+dtype0*
+_output_shapes
+: 
+l
+ArgMaxArgMaxdense_4_targetArgMax/dimension*
+
+Tidx0*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+T
+ArgMax_1/dimensionConst*
+_output_shapes
+: *
+dtype0*
+value	B :
+n
+ArgMax_1ArgMaxdense_4/ReluArgMax_1/dimension*
+
+Tidx0*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+N
+EqualEqualArgMaxArgMax_1*
+T0	*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+R
+Cast_1CastEqual*
+
+SrcT0
+*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+
+DstT0
+Q
+Const_2Const*
+valueB: *
+dtype0*
+_output_shapes
+:
+]
+Mean_4MeanCast_1Const_2*
+_output_shapes
+: *
+T0*
+	keep_dims( *
+
+Tidx0
+!
+
+group_depsNoOp^add^Mean_4
+j
+gradients/ShapeConst*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+
+loc:@add
+l
+gradients/ConstConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?*
+_class
+
+loc:@add
+q
+gradients/FillFillgradients/Shapegradients/Const*
+_output_shapes
+: *
+_class
+
+loc:@add*
+T0
+s
+gradients/add_grad/ShapeConst*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+
+loc:@add
+u
+gradients/add_grad/Shape_1Const*
+valueB *
+_class
+
+loc:@add*
+_output_shapes
+: *
+dtype0
+Ì
+(gradients/add_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/add_grad/Shapegradients/add_grad/Shape_1*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+_class
+
+loc:@add*
+T0
+¯
+gradients/add_grad/SumSumgradients/Fill(gradients/add_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+:*
+_class
+
+loc:@add
+
+gradients/add_grad/ReshapeReshapegradients/add_grad/Sumgradients/add_grad/Shape*
+Tshape0*
+_class
+
+loc:@add*
+_output_shapes
+: *
+T0
+³
+gradients/add_grad/Sum_1Sumgradients/Fill*gradients/add_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+:*
+_class
+
+loc:@add
+¤
+gradients/add_grad/Reshape_1Reshapegradients/add_grad/Sum_1gradients/add_grad/Shape_1*
+_output_shapes
+: *
+Tshape0*
+_class
+
+loc:@add*
+T0
+w
+gradients/mul_1_grad/ShapeConst*
+valueB *
+_class
+
+loc:@mul_1*
+dtype0*
+_output_shapes
+: 
+y
+gradients/mul_1_grad/Shape_1Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+
+loc:@mul_1
+Ô
+*gradients/mul_1_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/mul_1_grad/Shapegradients/mul_1_grad/Shape_1*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+_class
+
+loc:@mul_1*
+T0
+~
+gradients/mul_1_grad/mulMulgradients/add_grad/ReshapeMean_3*
+_class
+
+loc:@mul_1*
+_output_shapes
+: *
+T0
+¿
+gradients/mul_1_grad/SumSumgradients/mul_1_grad/mul*gradients/mul_1_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+
+loc:@mul_1*
+_output_shapes
+:
+¦
+gradients/mul_1_grad/ReshapeReshapegradients/mul_1_grad/Sumgradients/mul_1_grad/Shape*
+T0*
+_output_shapes
+: *
+Tshape0*
+_class
+
+loc:@mul_1
+
+gradients/mul_1_grad/mul_1Mulmul_1/xgradients/add_grad/Reshape*
+_output_shapes
+: *
+_class
+
+loc:@mul_1*
+T0
+Å
+gradients/mul_1_grad/Sum_1Sumgradients/mul_1_grad/mul_1,gradients/mul_1_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+
+loc:@mul_1*
+_output_shapes
+:
+¬
+gradients/mul_1_grad/Reshape_1Reshapegradients/mul_1_grad/Sum_1gradients/mul_1_grad/Shape_1*
+Tshape0*
+_class
+
+loc:@mul_1*
+_output_shapes
+: *
+T0
+ƒ
+ gradients/dense_1/add_grad/ShapeConst*
+dtype0*
+_output_shapes
+: *
+valueB *
+_class
+loc:@dense_1/add
+…
+"gradients/dense_1/add_grad/Shape_1Const*
+valueB *
+_class
+loc:@dense_1/add*
+dtype0*
+_output_shapes
+: 
+ì
+0gradients/dense_1/add_grad/BroadcastGradientArgsBroadcastGradientArgs gradients/dense_1/add_grad/Shape"gradients/dense_1/add_grad/Shape_1*
+T0*
+_class
+loc:@dense_1/add*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ
+Õ
+gradients/dense_1/add_grad/SumSumgradients/add_grad/Reshape_10gradients/dense_1/add_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_1/add
+¾
+"gradients/dense_1/add_grad/ReshapeReshapegradients/dense_1/add_grad/Sum gradients/dense_1/add_grad/Shape*
+T0*
+Tshape0*
+_class
+loc:@dense_1/add*
+_output_shapes
+: 
+Ù
+ gradients/dense_1/add_grad/Sum_1Sumgradients/add_grad/Reshape_12gradients/dense_1/add_grad/BroadcastGradientArgs:1*
+_output_shapes
+:*
+_class
+loc:@dense_1/add*
+T0*
+
+Tidx0*
+	keep_dims( 
+Ä
+$gradients/dense_1/add_grad/Reshape_1Reshape gradients/dense_1/add_grad/Sum_1"gradients/dense_1/add_grad/Shape_1*
+_output_shapes
+: *
+Tshape0*
+_class
+loc:@dense_1/add*
+T0
+ˆ
+#gradients/Mean_3_grad/Reshape/shapeConst*
+dtype0*
+_output_shapes
+:*
+valueB:*
+_class
+loc:@Mean_3
+»
+gradients/Mean_3_grad/ReshapeReshapegradients/mul_1_grad/Reshape_1#gradients/Mean_3_grad/Reshape/shape*
+Tshape0*
+_class
+loc:@Mean_3*
+_output_shapes
+:*
+T0
+}
+gradients/Mean_3_grad/ShapeShapetruediv*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_3*
+T0
+¹
+gradients/Mean_3_grad/TileTilegradients/Mean_3_grad/Reshapegradients/Mean_3_grad/Shape*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@Mean_3*
+T0*
+
+Tmultiples0
+
+gradients/Mean_3_grad/Shape_1Shapetruediv*
+T0*
+out_type0*
+_class
+loc:@Mean_3*
+_output_shapes
+:
+{
+gradients/Mean_3_grad/Shape_2Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+loc:@Mean_3
+€
+gradients/Mean_3_grad/ConstConst*
+valueB: *
+_class
+loc:@Mean_3*
+_output_shapes
+:*
+dtype0
+·
+gradients/Mean_3_grad/ProdProdgradients/Mean_3_grad/Shape_1gradients/Mean_3_grad/Const*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@Mean_3*
+_output_shapes
+: 
+‚
+gradients/Mean_3_grad/Const_1Const*
+_output_shapes
+:*
+dtype0*
+valueB: *
+_class
+loc:@Mean_3
+»
+gradients/Mean_3_grad/Prod_1Prodgradients/Mean_3_grad/Shape_2gradients/Mean_3_grad/Const_1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@Mean_3*
+_output_shapes
+: 
+|
+gradients/Mean_3_grad/Maximum/yConst*
+_output_shapes
+: *
+dtype0*
+value	B :*
+_class
+loc:@Mean_3
+£
+gradients/Mean_3_grad/MaximumMaximumgradients/Mean_3_grad/Prod_1gradients/Mean_3_grad/Maximum/y*
+_class
+loc:@Mean_3*
+_output_shapes
+: *
+T0
+¡
+gradients/Mean_3_grad/floordivFloorDivgradients/Mean_3_grad/Prodgradients/Mean_3_grad/Maximum*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_3
+
+gradients/Mean_3_grad/CastCastgradients/Mean_3_grad/floordiv*
+
+SrcT0*
+_class
+loc:@Mean_3*
+_output_shapes
+: *
+
+DstT0
+©
+gradients/Mean_3_grad/truedivRealDivgradients/Mean_3_grad/Tilegradients/Mean_3_grad/Cast*
+T0*
+_class
+loc:@Mean_3*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+™
+(gradients/dense_1/Sum_grad/Reshape/shapeConst*
+_output_shapes
+:*
+dtype0*
+valueB"      *
+_class
+loc:@dense_1/Sum
+Ô
+"gradients/dense_1/Sum_grad/ReshapeReshape$gradients/dense_1/add_grad/Reshape_1(gradients/dense_1/Sum_grad/Reshape/shape*
+T0*
+Tshape0*
+_class
+loc:@dense_1/Sum*
+_output_shapes
+
+:
+‹
+ gradients/dense_1/Sum_grad/ShapeShapedense_1/mul*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@dense_1/Sum*
+T0
+Ñ
+gradients/dense_1/Sum_grad/TileTile"gradients/dense_1/Sum_grad/Reshape gradients/dense_1/Sum_grad/Shape*
+
+Tmultiples0*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/Sum
+{
+gradients/truediv_grad/ShapeShapemul*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@truediv*
+T0
+}
+gradients/truediv_grad/Shape_1Const*
+valueB *
+_class
+loc:@truediv*
+dtype0*
+_output_shapes
+: 
+Ü
+,gradients/truediv_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/truediv_grad/Shapegradients/truediv_grad/Shape_1*
+T0*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@truediv
+š
+gradients/truediv_grad/RealDivRealDivgradients/Mean_3_grad/truedivMean_2*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@truediv*
+T0
+Ë
+gradients/truediv_grad/SumSumgradients/truediv_grad/RealDiv,gradients/truediv_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@truediv*
+_output_shapes
+:
+»
+gradients/truediv_grad/ReshapeReshapegradients/truediv_grad/Sumgradients/truediv_grad/Shape*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+Tshape0*
+_class
+loc:@truediv*
+T0
+p
+gradients/truediv_grad/NegNegmul*
+T0*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+™
+ gradients/truediv_grad/RealDiv_1RealDivgradients/truediv_grad/NegMean_2*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@truediv
+Ÿ
+ gradients/truediv_grad/RealDiv_2RealDiv gradients/truediv_grad/RealDiv_1Mean_2*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@truediv*
+T0
+¬
+gradients/truediv_grad/mulMulgradients/Mean_3_grad/truediv gradients/truediv_grad/RealDiv_2*
+T0*
+_class
+loc:@truediv*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+Ë
+gradients/truediv_grad/Sum_1Sumgradients/truediv_grad/mul.gradients/truediv_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@truediv*
+_output_shapes
+:
+´
+ gradients/truediv_grad/Reshape_1Reshapegradients/truediv_grad/Sum_1gradients/truediv_grad/Shape_1*
+T0*
+Tshape0*
+_class
+loc:@truediv*
+_output_shapes
+: 
+ƒ
+ gradients/dense_1/mul_grad/ShapeConst*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+loc:@dense_1/mul
+
+"gradients/dense_1/mul_grad/Shape_1Shapedense_1/Abs*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@dense_1/mul*
+T0
+ì
+0gradients/dense_1/mul_grad/BroadcastGradientArgsBroadcastGradientArgs gradients/dense_1/mul_grad/Shape"gradients/dense_1/mul_grad/Shape_1*
+_class
+loc:@dense_1/mul*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+T0
+¥
+gradients/dense_1/mul_grad/mulMulgradients/dense_1/Sum_grad/Tiledense_1/Abs*
+T0*
+_class
+loc:@dense_1/mul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+×
+gradients/dense_1/mul_grad/SumSumgradients/dense_1/mul_grad/mul0gradients/dense_1/mul_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@dense_1/mul*
+_output_shapes
+:
+¾
+"gradients/dense_1/mul_grad/ReshapeReshapegradients/dense_1/mul_grad/Sum gradients/dense_1/mul_grad/Shape*
+_output_shapes
+: *
+Tshape0*
+_class
+loc:@dense_1/mul*
+T0
+©
+ gradients/dense_1/mul_grad/mul_1Muldense_1/mul/xgradients/dense_1/Sum_grad/Tile*
+T0*
+_class
+loc:@dense_1/mul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+İ
+ gradients/dense_1/mul_grad/Sum_1Sum gradients/dense_1/mul_grad/mul_12gradients/dense_1/mul_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@dense_1/mul*
+_output_shapes
+:
+Õ
+$gradients/dense_1/mul_grad/Reshape_1Reshape gradients/dense_1/mul_grad/Sum_1"gradients/dense_1/mul_grad/Shape_1*
+T0*
+Tshape0*
+_class
+loc:@dense_1/mul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+v
+gradients/mul_grad/ShapeShapeMean_1*
+T0*
+out_type0*
+_class
+
+loc:@mul*
+_output_shapes
+:
+ˆ
+gradients/mul_grad/Shape_1Shapedense_4_sample_weights*
+_output_shapes
+:*
+out_type0*
+_class
+
+loc:@mul*
+T0
+Ì
+(gradients/mul_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/mul_grad/Shapegradients/mul_grad/Shape_1*
+T0*
+_class
+
+loc:@mul*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ
+›
+gradients/mul_grad/mulMulgradients/truediv_grad/Reshapedense_4_sample_weights*
+T0*
+_class
+
+loc:@mul*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+·
+gradients/mul_grad/SumSumgradients/mul_grad/mul(gradients/mul_grad/BroadcastGradientArgs*
+_output_shapes
+:*
+_class
+
+loc:@mul*
+T0*
+
+Tidx0*
+	keep_dims( 
+«
+gradients/mul_grad/ReshapeReshapegradients/mul_grad/Sumgradients/mul_grad/Shape*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+Tshape0*
+_class
+
+loc:@mul*
+T0
+
+gradients/mul_grad/mul_1MulMean_1gradients/truediv_grad/Reshape*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+
+loc:@mul
+½
+gradients/mul_grad/Sum_1Sumgradients/mul_grad/mul_1*gradients/mul_grad/BroadcastGradientArgs:1*
+_output_shapes
+:*
+_class
+
+loc:@mul*
+T0*
+
+Tidx0*
+	keep_dims( 
+±
+gradients/mul_grad/Reshape_1Reshapegradients/mul_grad/Sum_1gradients/mul_grad/Shape_1*
+T0*
+Tshape0*
+_class
+
+loc:@mul*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+‡
+gradients/dense_1/Abs_grad/SignSigndense_1/Tanh*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/Abs
+¾
+gradients/dense_1/Abs_grad/mulMul$gradients/dense_1/mul_grad/Reshape_1gradients/dense_1/Abs_grad/Sign*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/Abs
+z
+gradients/Mean_1_grad/ShapeShapeMean*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_1*
+T0
+w
+gradients/Mean_1_grad/SizeConst*
+value	B :*
+_class
+loc:@Mean_1*
+dtype0*
+_output_shapes
+: 
+”
+gradients/Mean_1_grad/addAddMean_1/reduction_indicesgradients/Mean_1_grad/Size*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_1
+š
+gradients/Mean_1_grad/modFloorModgradients/Mean_1_grad/addgradients/Mean_1_grad/Size*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+‚
+gradients/Mean_1_grad/Shape_1Const*
+valueB: *
+_class
+loc:@Mean_1*
+_output_shapes
+:*
+dtype0
+~
+!gradients/Mean_1_grad/range/startConst*
+dtype0*
+_output_shapes
+: *
+value	B : *
+_class
+loc:@Mean_1
+~
+!gradients/Mean_1_grad/range/deltaConst*
+value	B :*
+_class
+loc:@Mean_1*
+_output_shapes
+: *
+dtype0
+É
+gradients/Mean_1_grad/rangeRange!gradients/Mean_1_grad/range/startgradients/Mean_1_grad/Size!gradients/Mean_1_grad/range/delta*
+
+Tidx0*
+_class
+loc:@Mean_1*
+_output_shapes
+:
+}
+ gradients/Mean_1_grad/Fill/valueConst*
+value	B :*
+_class
+loc:@Mean_1*
+_output_shapes
+: *
+dtype0
+¡
+gradients/Mean_1_grad/FillFillgradients/Mean_1_grad/Shape_1 gradients/Mean_1_grad/Fill/value*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_1
+÷
+#gradients/Mean_1_grad/DynamicStitchDynamicStitchgradients/Mean_1_grad/rangegradients/Mean_1_grad/modgradients/Mean_1_grad/Shapegradients/Mean_1_grad/Fill*
+T0*
+_class
+loc:@Mean_1*
+N*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+|
+gradients/Mean_1_grad/Maximum/yConst*
+dtype0*
+_output_shapes
+: *
+value	B :*
+_class
+loc:@Mean_1
+·
+gradients/Mean_1_grad/MaximumMaximum#gradients/Mean_1_grad/DynamicStitchgradients/Mean_1_grad/Maximum/y*
+_class
+loc:@Mean_1*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+¯
+gradients/Mean_1_grad/floordivFloorDivgradients/Mean_1_grad/Shapegradients/Mean_1_grad/Maximum*
+_class
+loc:@Mean_1*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+µ
+gradients/Mean_1_grad/ReshapeReshapegradients/mul_grad/Reshape#gradients/Mean_1_grad/DynamicStitch*
+Tshape0*
+_class
+loc:@Mean_1*
+_output_shapes
+:*
+T0
+±
+gradients/Mean_1_grad/TileTilegradients/Mean_1_grad/Reshapegradients/Mean_1_grad/floordiv*
+
+Tmultiples0*
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+:
+|
+gradients/Mean_1_grad/Shape_2ShapeMean*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_1*
+T0
+~
+gradients/Mean_1_grad/Shape_3ShapeMean_1*
+_output_shapes
+:*
+out_type0*
+_class
+loc:@Mean_1*
+T0
+€
+gradients/Mean_1_grad/ConstConst*
+valueB: *
+_class
+loc:@Mean_1*
+_output_shapes
+:*
+dtype0
+·
+gradients/Mean_1_grad/ProdProdgradients/Mean_1_grad/Shape_2gradients/Mean_1_grad/Const*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+loc:@Mean_1*
+_output_shapes
+: 
+‚
+gradients/Mean_1_grad/Const_1Const*
+valueB: *
+_class
+loc:@Mean_1*
+dtype0*
+_output_shapes
+:
+»
+gradients/Mean_1_grad/Prod_1Prodgradients/Mean_1_grad/Shape_3gradients/Mean_1_grad/Const_1*
+_output_shapes
+: *
+_class
+loc:@Mean_1*
+T0*
+
+Tidx0*
+	keep_dims( 
+~
+!gradients/Mean_1_grad/Maximum_1/yConst*
+value	B :*
+_class
+loc:@Mean_1*
+dtype0*
+_output_shapes
+: 
+§
+gradients/Mean_1_grad/Maximum_1Maximumgradients/Mean_1_grad/Prod_1!gradients/Mean_1_grad/Maximum_1/y*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_1
+¥
+ gradients/Mean_1_grad/floordiv_1FloorDivgradients/Mean_1_grad/Prodgradients/Mean_1_grad/Maximum_1*
+T0*
+_output_shapes
+: *
+_class
+loc:@Mean_1
+
+gradients/Mean_1_grad/CastCast gradients/Mean_1_grad/floordiv_1*
+_output_shapes
+: *
+
+DstT0*
+_class
+loc:@Mean_1*
+
+SrcT0
+©
+gradients/Mean_1_grad/truedivRealDivgradients/Mean_1_grad/Tilegradients/Mean_1_grad/Cast*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@Mean_1*
+T0
+x
+gradients/Mean_grad/ShapeShapeSquare*
+out_type0*
+_class
+	loc:@Mean*
+_output_shapes
+:*
+T0
+s
+gradients/Mean_grad/SizeConst*
+value	B :*
+_class
+	loc:@Mean*
+dtype0*
+_output_shapes
+: 
+Š
+gradients/Mean_grad/addAddMean/reduction_indicesgradients/Mean_grad/Size*
+T0*
+_class
+	loc:@Mean*
+_output_shapes
+: 
+
+gradients/Mean_grad/modFloorModgradients/Mean_grad/addgradients/Mean_grad/Size*
+T0*
+_output_shapes
+: *
+_class
+	loc:@Mean
+w
+gradients/Mean_grad/Shape_1Const*
+_output_shapes
+: *
+dtype0*
+valueB *
+_class
+	loc:@Mean
+z
+gradients/Mean_grad/range/startConst*
+_output_shapes
+: *
+dtype0*
+value	B : *
+_class
+	loc:@Mean
+z
+gradients/Mean_grad/range/deltaConst*
+_output_shapes
+: *
+dtype0*
+value	B :*
+_class
+	loc:@Mean
+¿
+gradients/Mean_grad/rangeRangegradients/Mean_grad/range/startgradients/Mean_grad/Sizegradients/Mean_grad/range/delta*
+_class
+	loc:@Mean*
+_output_shapes
+:*
+
+Tidx0
+y
+gradients/Mean_grad/Fill/valueConst*
+value	B :*
+_class
+	loc:@Mean*
+_output_shapes
+: *
+dtype0
+—
+gradients/Mean_grad/FillFillgradients/Mean_grad/Shape_1gradients/Mean_grad/Fill/value*
+T0*
+_class
+	loc:@Mean*
+_output_shapes
+: 
+ë
+!gradients/Mean_grad/DynamicStitchDynamicStitchgradients/Mean_grad/rangegradients/Mean_grad/modgradients/Mean_grad/Shapegradients/Mean_grad/Fill*
+T0*
+_class
+	loc:@Mean*
+N*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+x
+gradients/Mean_grad/Maximum/yConst*
+value	B :*
+_class
+	loc:@Mean*
+_output_shapes
+: *
+dtype0
+¯
+gradients/Mean_grad/MaximumMaximum!gradients/Mean_grad/DynamicStitchgradients/Mean_grad/Maximum/y*
+T0*#
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+	loc:@Mean
+
+gradients/Mean_grad/floordivFloorDivgradients/Mean_grad/Shapegradients/Mean_grad/Maximum*
+_output_shapes
+:*
+_class
+	loc:@Mean*
+T0
+²
+gradients/Mean_grad/ReshapeReshapegradients/Mean_1_grad/truediv!gradients/Mean_grad/DynamicStitch*
+T0*
+Tshape0*
+_class
+	loc:@Mean*
+_output_shapes
+:
+Á
+gradients/Mean_grad/TileTilegradients/Mean_grad/Reshapegradients/Mean_grad/floordiv*0
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*
+_class
+	loc:@Mean*
+T0*
+
+Tmultiples0
+z
+gradients/Mean_grad/Shape_2ShapeSquare*
+out_type0*
+_class
+	loc:@Mean*
+_output_shapes
+:*
+T0
+x
+gradients/Mean_grad/Shape_3ShapeMean*
+out_type0*
+_class
+	loc:@Mean*
+_output_shapes
+:*
+T0
+|
+gradients/Mean_grad/ConstConst*
+valueB: *
+_class
+	loc:@Mean*
+_output_shapes
+:*
+dtype0
+¯
+gradients/Mean_grad/ProdProdgradients/Mean_grad/Shape_2gradients/Mean_grad/Const*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+: *
+_class
+	loc:@Mean
+~
+gradients/Mean_grad/Const_1Const*
+dtype0*
+_output_shapes
+:*
+valueB: *
+_class
+	loc:@Mean
+³
+gradients/Mean_grad/Prod_1Prodgradients/Mean_grad/Shape_3gradients/Mean_grad/Const_1*
+_output_shapes
+: *
+_class
+	loc:@Mean*
+T0*
+
+Tidx0*
+	keep_dims( 
+z
+gradients/Mean_grad/Maximum_1/yConst*
+dtype0*
+_output_shapes
+: *
+value	B :*
+_class
+	loc:@Mean
+Ÿ
+gradients/Mean_grad/Maximum_1Maximumgradients/Mean_grad/Prod_1gradients/Mean_grad/Maximum_1/y*
+T0*
+_class
+	loc:@Mean*
+_output_shapes
+: 
+
+gradients/Mean_grad/floordiv_1FloorDivgradients/Mean_grad/Prodgradients/Mean_grad/Maximum_1*
+T0*
+_output_shapes
+: *
+_class
+	loc:@Mean
+‰
+gradients/Mean_grad/CastCastgradients/Mean_grad/floordiv_1*
+
+SrcT0*
+_output_shapes
+: *
+
+DstT0*
+_class
+	loc:@Mean
+¥
+gradients/Mean_grad/truedivRealDivgradients/Mean_grad/Tilegradients/Mean_grad/Cast*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+	loc:@Mean*
+T0
+™
+gradients/Square_grad/mul/xConst^gradients/Mean_grad/truediv*
+valueB
+ *   @*
+_class
+loc:@Square*
+_output_shapes
+: *
+dtype0
+
+gradients/Square_grad/mulMulgradients/Square_grad/mul/xsub*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@Square
+§
+gradients/Square_grad/mul_1Mulgradients/Mean_grad/truedivgradients/Square_grad/mul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@Square*
+T0
+|
+gradients/sub_grad/ShapeShapedense_4/Relu*
+out_type0*
+_class
+
+loc:@sub*
+_output_shapes
+:*
+T0
+€
+gradients/sub_grad/Shape_1Shapedense_4_target*
+T0*
+out_type0*
+_class
+
+loc:@sub*
+_output_shapes
+:
+Ì
+(gradients/sub_grad/BroadcastGradientArgsBroadcastGradientArgsgradients/sub_grad/Shapegradients/sub_grad/Shape_1*
+_class
+
+loc:@sub*2
+_output_shapes 
+:ÿÿÿÿÿÿÿÿÿ:ÿÿÿÿÿÿÿÿÿ*
+T0
+¼
+gradients/sub_grad/SumSumgradients/Square_grad/mul_1(gradients/sub_grad/BroadcastGradientArgs*
+
+Tidx0*
+	keep_dims( *
+T0*
+_class
+
+loc:@sub*
+_output_shapes
+:
+¯
+gradients/sub_grad/ReshapeReshapegradients/sub_grad/Sumgradients/sub_grad/Shape*
+T0*
+Tshape0*
+_class
+
+loc:@sub*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+À
+gradients/sub_grad/Sum_1Sumgradients/Square_grad/mul_1*gradients/sub_grad/BroadcastGradientArgs:1*
+
+Tidx0*
+	keep_dims( *
+T0*
+_output_shapes
+:*
+_class
+
+loc:@sub
+r
+gradients/sub_grad/NegNeggradients/sub_grad/Sum_1*
+T0*
+_class
+
+loc:@sub*
+_output_shapes
+:
+¼
+gradients/sub_grad/Reshape_1Reshapegradients/sub_grad/Neggradients/sub_grad/Shape_1*0
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*
+Tshape0*
+_class
+
+loc:@sub*
+T0
+­
+$gradients/dense_4/Relu_grad/ReluGradReluGradgradients/sub_grad/Reshapedense_4/Relu*
+_class
+loc:@dense_4/Relu*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+¿
+*gradients/dense_4/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_4/Relu_grad/ReluGrad*
+_output_shapes
+:*
+data_formatNHWC*"
+_class
+loc:@dense_4/BiasAdd*
+T0
+ä
+$gradients/dense_4/MatMul_grad/MatMulMatMul$gradients/dense_4/Relu_grad/ReluGraddense_4/kernel/read*
+transpose_b(*
+T0*!
+_class
+loc:@dense_4/MatMul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( 
+Ö
+&gradients/dense_4/MatMul_grad/MatMul_1MatMuldense_3/Tanh$gradients/dense_4/Relu_grad/ReluGrad*
+transpose_b( *
+_output_shapes
+
+:*
+transpose_a(*!
+_class
+loc:@dense_4/MatMul*
+T0
+·
+$gradients/dense_3/Tanh_grad/TanhGradTanhGraddense_3/Tanh$gradients/dense_4/MatMul_grad/MatMul*
+_class
+loc:@dense_3/Tanh*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+¿
+*gradients/dense_3/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_3/Tanh_grad/TanhGrad*"
+_class
+loc:@dense_3/BiasAdd*
+_output_shapes
+:*
+T0*
+data_formatNHWC
+ä
+$gradients/dense_3/MatMul_grad/MatMulMatMul$gradients/dense_3/Tanh_grad/TanhGraddense_3/kernel/read*
+transpose_b(*!
+_class
+loc:@dense_3/MatMul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *
+T0
+Ö
+&gradients/dense_3/MatMul_grad/MatMul_1MatMuldense_2/Relu$gradients/dense_3/Tanh_grad/TanhGrad*
+transpose_b( *
+_output_shapes
+
+:*
+transpose_a(*!
+_class
+loc:@dense_3/MatMul*
+T0
+·
+$gradients/dense_2/Relu_grad/ReluGradReluGrad$gradients/dense_3/MatMul_grad/MatMuldense_2/Relu*
+_class
+loc:@dense_2/Relu*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+T0
+¿
+*gradients/dense_2/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_2/Relu_grad/ReluGrad*
+data_formatNHWC*
+T0*
+_output_shapes
+:*"
+_class
+loc:@dense_2/BiasAdd
+ä
+$gradients/dense_2/MatMul_grad/MatMulMatMul$gradients/dense_2/Relu_grad/ReluGraddense_2/kernel/read*
+transpose_b(*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( *!
+_class
+loc:@dense_2/MatMul
+Ö
+&gradients/dense_2/MatMul_grad/MatMul_1MatMuldense_1/Tanh$gradients/dense_2/Relu_grad/ReluGrad*
+transpose_b( *
+T0*!
+_class
+loc:@dense_2/MatMul*
+_output_shapes
+
+:*
+transpose_a(
+·
+gradients/AddNAddNgradients/dense_1/Abs_grad/mul$gradients/dense_2/MatMul_grad/MatMul*
+N*
+T0*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+_class
+loc:@dense_1/Abs
+¡
+$gradients/dense_1/Tanh_grad/TanhGradTanhGraddense_1/Tanhgradients/AddN*
+T0*
+_class
+loc:@dense_1/Tanh*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ
+¿
+*gradients/dense_1/BiasAdd_grad/BiasAddGradBiasAddGrad$gradients/dense_1/Tanh_grad/TanhGrad*
+T0*"
+_class
+loc:@dense_1/BiasAdd*
+data_formatNHWC*
+_output_shapes
+:
+ä
+$gradients/dense_1/MatMul_grad/MatMulMatMul$gradients/dense_1/Tanh_grad/TanhGraddense_1/kernel/read*
+transpose_b(*
+T0*!
+_class
+loc:@dense_1/MatMul*'
+_output_shapes
+:ÿÿÿÿÿÿÿÿÿ*
+transpose_a( 
+Ñ
+&gradients/dense_1/MatMul_grad/MatMul_1MatMulinput_1$gradients/dense_1/Tanh_grad/TanhGrad*
+transpose_b( *
+T0*!
+_class
+loc:@dense_1/MatMul*
+_output_shapes
+
+:*
+transpose_a(
+T
+AssignAdd/valueConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+†
+	AssignAdd	AssignAdd
+iterationsAssignAdd/value*
+_class
+loc:@iterations*
+_output_shapes
+: *
+T0*
+use_locking( 
+L
+add_1/yConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+G
+add_1Additerations/readadd_1/y*
+_output_shapes
+: *
+T0
+?
+PowPowbeta_2/readadd_1*
+T0*
+_output_shapes
+: 
+L
+sub_1/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+;
+sub_1Subsub_1/xPow*
+T0*
+_output_shapes
+: 
+L
+Const_3Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+L
+Const_4Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €
+Q
+clip_by_value/MinimumMinimumsub_1Const_4*
+_output_shapes
+: *
+T0
+Y
+clip_by_valueMaximumclip_by_value/MinimumConst_3*
+_output_shapes
+: *
+T0
+<
+SqrtSqrtclip_by_value*
+T0*
+_output_shapes
+: 
+A
+Pow_1Powbeta_1/readadd_1*
+_output_shapes
+: *
+T0
+L
+sub_2/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+=
+sub_2Subsub_2/xPow_1*
+T0*
+_output_shapes
+: 
+B
+	truediv_1RealDivSqrtsub_2*
+T0*
+_output_shapes
+: 
+A
+mul_2Mullr/read	truediv_1*
+_output_shapes
+: *
+T0
+T
+Const_5Const*
+dtype0*
+_output_shapes
+:*
+valueB*    
+t
+Variable
+VariableV2*
+_output_shapes
+:*
+	container *
+shape:*
+dtype0*
+shared_name 
+—
+Variable/AssignAssignVariableConst_5*
+use_locking(*
+T0*
+_class
+loc:@Variable*
+validate_shape(*
+_output_shapes
+:
+e
+Variable/readIdentityVariable*
+T0*
+_class
+loc:@Variable*
+_output_shapes
+:
+\
+Const_6Const*
+valueB*    *
+dtype0*
+_output_shapes
+
+:
+~
+
+Variable_1
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¡
+Variable_1/AssignAssign
+Variable_1Const_6*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_1
+o
+Variable_1/readIdentity
+Variable_1*
+_output_shapes
+
+:*
+_class
+loc:@Variable_1*
+T0
+T
+Const_7Const*
+valueB*    *
+_output_shapes
+:*
+dtype0
+v
+
+Variable_2
+VariableV2*
+_output_shapes
+:*
+	container *
+dtype0*
+shared_name *
+shape:
+
+Variable_2/AssignAssign
+Variable_2Const_7*
+_class
+loc:@Variable_2*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+k
+Variable_2/readIdentity
+Variable_2*
+T0*
+_class
+loc:@Variable_2*
+_output_shapes
+:
+\
+Const_8Const*
+_output_shapes
+
+:*
+dtype0*
+valueB*    
+~
+
+Variable_3
+VariableV2*
+_output_shapes
+
+:*
+	container *
+shape
+:*
+dtype0*
+shared_name 
+¡
+Variable_3/AssignAssign
+Variable_3Const_8*
+_output_shapes
+
+:*
+validate_shape(*
+_class
+loc:@Variable_3*
+T0*
+use_locking(
+o
+Variable_3/readIdentity
+Variable_3*
+_output_shapes
+
+:*
+_class
+loc:@Variable_3*
+T0
+T
+Const_9Const*
+valueB*    *
+_output_shapes
+:*
+dtype0
+v
+
+Variable_4
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+
+Variable_4/AssignAssign
+Variable_4Const_9*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_4
+k
+Variable_4/readIdentity
+Variable_4*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_4
+]
+Const_10Const*
+valueB*    *
+dtype0*
+_output_shapes
+
+:
+~
+
+Variable_5
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¢
+Variable_5/AssignAssign
+Variable_5Const_10*
+use_locking(*
+T0*
+_class
+loc:@Variable_5*
+validate_shape(*
+_output_shapes
+
+:
+o
+Variable_5/readIdentity
+Variable_5*
+_output_shapes
+
+:*
+_class
+loc:@Variable_5*
+T0
+U
+Const_11Const*
+valueB*    *
+dtype0*
+_output_shapes
+:
+v
+
+Variable_6
+VariableV2*
+_output_shapes
+:*
+	container *
+dtype0*
+shared_name *
+shape:
+
+Variable_6/AssignAssign
+Variable_6Const_11*
+_class
+loc:@Variable_6*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+k
+Variable_6/readIdentity
+Variable_6*
+T0*
+_class
+loc:@Variable_6*
+_output_shapes
+:
+]
+Const_12Const*
+_output_shapes
+
+:*
+dtype0*
+valueB*    
+~
+
+Variable_7
+VariableV2*
+shared_name *
+dtype0*
+shape
+:*
+_output_shapes
+
+:*
+	container 
+¢
+Variable_7/AssignAssign
+Variable_7Const_12*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_7
+o
+Variable_7/readIdentity
+Variable_7*
+_output_shapes
+
+:*
+_class
+loc:@Variable_7*
+T0
+U
+Const_13Const*
+_output_shapes
+:*
+dtype0*
+valueB*    
+v
+
+Variable_8
+VariableV2*
+shape:*
+shared_name *
+dtype0*
+_output_shapes
+:*
+	container 
+
+Variable_8/AssignAssign
+Variable_8Const_13*
+_class
+loc:@Variable_8*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+k
+Variable_8/readIdentity
+Variable_8*
+T0*
+_class
+loc:@Variable_8*
+_output_shapes
+:
+]
+Const_14Const*
+valueB*    *
+dtype0*
+_output_shapes
+
+:
+~
+
+Variable_9
+VariableV2*
+shared_name *
+dtype0*
+shape
+:*
+_output_shapes
+
+:*
+	container 
+¢
+Variable_9/AssignAssign
+Variable_9Const_14*
+_class
+loc:@Variable_9*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+o
+Variable_9/readIdentity
+Variable_9*
+_output_shapes
+
+:*
+_class
+loc:@Variable_9*
+T0
+U
+Const_15Const*
+valueB*    *
+dtype0*
+_output_shapes
+:
+w
+Variable_10
+VariableV2*
+shape:*
+shared_name *
+dtype0*
+_output_shapes
+:*
+	container 
+¡
+Variable_10/AssignAssignVariable_10Const_15*
+_class
+loc:@Variable_10*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+n
+Variable_10/readIdentityVariable_10*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_10
+]
+Const_16Const*
+valueB*    *
+_output_shapes
+
+:*
+dtype0
+
+Variable_11
+VariableV2*
+shape
+:*
+shared_name *
+dtype0*
+_output_shapes
+
+:*
+	container 
+¥
+Variable_11/AssignAssignVariable_11Const_16*
+_class
+loc:@Variable_11*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+r
+Variable_11/readIdentityVariable_11*
+T0*
+_class
+loc:@Variable_11*
+_output_shapes
+
+:
+U
+Const_17Const*
+_output_shapes
+:*
+dtype0*
+valueB*    
+w
+Variable_12
+VariableV2*
+shared_name *
+dtype0*
+shape:*
+_output_shapes
+:*
+	container 
+¡
+Variable_12/AssignAssignVariable_12Const_17*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@Variable_12*
+T0*
+use_locking(
+n
+Variable_12/readIdentityVariable_12*
+T0*
+_class
+loc:@Variable_12*
+_output_shapes
+:
+]
+Const_18Const*
+valueB*    *
+_output_shapes
+
+:*
+dtype0
+
+Variable_13
+VariableV2*
+_output_shapes
+
+:*
+	container *
+dtype0*
+shared_name *
+shape
+:
+¥
+Variable_13/AssignAssignVariable_13Const_18*
+use_locking(*
+T0*
+_class
+loc:@Variable_13*
+validate_shape(*
+_output_shapes
+
+:
+r
+Variable_13/readIdentityVariable_13*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_13
+U
+Const_19Const*
+valueB*    *
+dtype0*
+_output_shapes
+:
+w
+Variable_14
+VariableV2*
+_output_shapes
+:*
+	container *
+shape:*
+dtype0*
+shared_name 
+¡
+Variable_14/AssignAssignVariable_14Const_19*
+use_locking(*
+T0*
+_class
+loc:@Variable_14*
+validate_shape(*
+_output_shapes
+:
+n
+Variable_14/readIdentityVariable_14*
+T0*
+_class
+loc:@Variable_14*
+_output_shapes
+:
+]
+Const_20Const*
+valueB*    *
+_output_shapes
+
+:*
+dtype0
+
+Variable_15
+VariableV2*
+_output_shapes
+
+:*
+	container *
+dtype0*
+shared_name *
+shape
+:
+¥
+Variable_15/AssignAssignVariable_15Const_20*
+use_locking(*
+T0*
+_class
+loc:@Variable_15*
+validate_shape(*
+_output_shapes
+
+:
+r
+Variable_15/readIdentityVariable_15*
+_output_shapes
+
+:*
+_class
+loc:@Variable_15*
+T0
+M
+mul_3Mulbeta_1/readVariable/read*
+_output_shapes
+:*
+T0
+L
+sub_3/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+C
+sub_3Subsub_3/xbeta_1/read*
+_output_shapes
+: *
+T0
+d
+mul_4Mulsub_3*gradients/dense_1/BiasAdd_grad/BiasAddGrad*
+_output_shapes
+:*
+T0
+?
+add_2Addmul_3mul_4*
+T0*
+_output_shapes
+:
+O
+mul_5Mulbeta_2/readVariable_8/read*
+T0*
+_output_shapes
+:
+L
+sub_4/xConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €?
+C
+sub_4Subsub_4/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_1Square*gradients/dense_1/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+B
+mul_6Mulsub_4Square_1*
+_output_shapes
+:*
+T0
+?
+add_3Addmul_5mul_6*
+_output_shapes
+:*
+T0
+?
+mul_7Mulmul_2add_2*
+_output_shapes
+:*
+T0
+M
+Const_21Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+M
+Const_22Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €
+X
+clip_by_value_1/MinimumMinimumadd_3Const_22*
+T0*
+_output_shapes
+:
+b
+clip_by_value_1Maximumclip_by_value_1/MinimumConst_21*
+_output_shapes
+:*
+T0
+D
+Sqrt_1Sqrtclip_by_value_1*
+T0*
+_output_shapes
+:
+L
+add_4/yConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *wÌ+2
+B
+add_4AddSqrt_1add_4/y*
+_output_shapes
+:*
+T0
+G
+	truediv_2RealDivmul_7add_4*
+T0*
+_output_shapes
+:
+O
+sub_5Subdense_1/bias/read	truediv_2*
+T0*
+_output_shapes
+:
+Œ
+AssignAssignVariableadd_2*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable
+’
+Assign_1Assign
+Variable_8add_3*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@Variable_8
+–
+Assign_2Assigndense_1/biassub_5*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+:*
+_class
+loc:@dense_1/bias
+S
+mul_8Mulbeta_1/readVariable_1/read*
+T0*
+_output_shapes
+
+:
+L
+sub_6/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+C
+sub_6Subsub_6/xbeta_1/read*
+T0*
+_output_shapes
+: 
+d
+mul_9Mulsub_6&gradients/dense_1/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+C
+add_5Addmul_8mul_9*
+_output_shapes
+
+:*
+T0
+T
+mul_10Mulbeta_2/readVariable_9/read*
+_output_shapes
+
+:*
+T0
+L
+sub_7/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+C
+sub_7Subsub_7/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_2Square&gradients/dense_1/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+G
+mul_11Mulsub_7Square_2*
+_output_shapes
+
+:*
+T0
+E
+add_6Addmul_10mul_11*
+T0*
+_output_shapes
+
+:
+D
+mul_12Mulmul_2add_5*
+_output_shapes
+
+:*
+T0
+M
+Const_23Const*
+valueB
+ *    *
+_output_shapes
+: *
+dtype0
+M
+Const_24Const*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €
+\
+clip_by_value_2/MinimumMinimumadd_6Const_24*
+_output_shapes
+
+:*
+T0
+f
+clip_by_value_2Maximumclip_by_value_2/MinimumConst_23*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_2Sqrtclip_by_value_2*
+T0*
+_output_shapes
+
+:
+L
+add_7/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+F
+add_7AddSqrt_2add_7/y*
+T0*
+_output_shapes
+
+:
+L
+	truediv_3RealDivmul_12add_7*
+_output_shapes
+
+:*
+T0
+U
+sub_8Subdense_1/kernel/read	truediv_3*
+_output_shapes
+
+:*
+T0
+–
+Assign_3Assign
+Variable_1add_5*
+use_locking(*
+T0*
+_class
+loc:@Variable_1*
+validate_shape(*
+_output_shapes
+
+:
+–
+Assign_4Assign
+Variable_9add_6*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_9
+
+Assign_5Assigndense_1/kernelsub_8*!
+_class
+loc:@dense_1/kernel*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+P
+mul_13Mulbeta_1/readVariable_2/read*
+_output_shapes
+:*
+T0
+L
+sub_9/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+C
+sub_9Subsub_9/xbeta_1/read*
+T0*
+_output_shapes
+: 
+e
+mul_14Mulsub_9*gradients/dense_2/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+A
+add_8Addmul_13mul_14*
+_output_shapes
+:*
+T0
+Q
+mul_15Mulbeta_2/readVariable_10/read*
+_output_shapes
+:*
+T0
+M
+sub_10/xConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *  €?
+E
+sub_10Subsub_10/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_3Square*gradients/dense_2/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+D
+mul_16Mulsub_10Square_3*
+_output_shapes
+:*
+T0
+A
+add_9Addmul_15mul_16*
+T0*
+_output_shapes
+:
+@
+mul_17Mulmul_2add_8*
+_output_shapes
+:*
+T0
+M
+Const_25Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_26Const*
+dtype0*
+_output_shapes
+: *
+valueB
+ *  €
+X
+clip_by_value_3/MinimumMinimumadd_9Const_26*
+T0*
+_output_shapes
+:
+b
+clip_by_value_3Maximumclip_by_value_3/MinimumConst_25*
+T0*
+_output_shapes
+:
+D
+Sqrt_3Sqrtclip_by_value_3*
+T0*
+_output_shapes
+:
+M
+add_10/yConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *wÌ+2
+D
+add_10AddSqrt_3add_10/y*
+_output_shapes
+:*
+T0
+I
+	truediv_4RealDivmul_17add_10*
+T0*
+_output_shapes
+:
+P
+sub_11Subdense_2/bias/read	truediv_4*
+_output_shapes
+:*
+T0
+’
+Assign_6Assign
+Variable_2add_8*
+_class
+loc:@Variable_2*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+”
+Assign_7AssignVariable_10add_9*
+_output_shapes
+:*
+validate_shape(*
+_class
+loc:@Variable_10*
+T0*
+use_locking(
+—
+Assign_8Assigndense_2/biassub_11*
+_class
+loc:@dense_2/bias*
+_output_shapes
+:*
+T0*
+validate_shape(*
+use_locking(
+T
+mul_18Mulbeta_1/readVariable_3/read*
+T0*
+_output_shapes
+
+:
+M
+sub_12/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_12Subsub_12/xbeta_1/read*
+T0*
+_output_shapes
+: 
+f
+mul_19Mulsub_12&gradients/dense_2/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+F
+add_11Addmul_18mul_19*
+_output_shapes
+
+:*
+T0
+U
+mul_20Mulbeta_2/readVariable_11/read*
+T0*
+_output_shapes
+
+:
+M
+sub_13/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_13Subsub_13/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_4Square&gradients/dense_2/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+H
+mul_21Mulsub_13Square_4*
+_output_shapes
+
+:*
+T0
+F
+add_12Addmul_20mul_21*
+_output_shapes
+
+:*
+T0
+E
+mul_22Mulmul_2add_11*
+_output_shapes
+
+:*
+T0
+M
+Const_27Const*
+_output_shapes
+: *
+dtype0*
+valueB
+ *    
+M
+Const_28Const*
+valueB
+ *  €*
+dtype0*
+_output_shapes
+: 
+]
+clip_by_value_4/MinimumMinimumadd_12Const_28*
+T0*
+_output_shapes
+
+:
+f
+clip_by_value_4Maximumclip_by_value_4/MinimumConst_27*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_4Sqrtclip_by_value_4*
+T0*
+_output_shapes
+
+:
+M
+add_13/yConst*
+_output_shapes
+: *
+dtype0*
+valueB
+ *wÌ+2
+H
+add_13AddSqrt_4add_13/y*
+_output_shapes
+
+:*
+T0
+M
+	truediv_5RealDivmul_22add_13*
+T0*
+_output_shapes
+
+:
+V
+sub_14Subdense_2/kernel/read	truediv_5*
+T0*
+_output_shapes
+
+:
+—
+Assign_9Assign
+Variable_3add_11*
+use_locking(*
+validate_shape(*
+T0*
+_output_shapes
+
+:*
+_class
+loc:@Variable_3
+š
+	Assign_10AssignVariable_11add_12*
+use_locking(*
+T0*
+_class
+loc:@Variable_11*
+validate_shape(*
+_output_shapes
+
+:
+ 
+	Assign_11Assigndense_2/kernelsub_14*
+_output_shapes
+
+:*
+validate_shape(*!
+_class
+loc:@dense_2/kernel*
+T0*
+use_locking(
+P
+mul_23Mulbeta_1/readVariable_4/read*
+T0*
+_output_shapes
+:
+M
+sub_15/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+E
+sub_15Subsub_15/xbeta_1/read*
+_output_shapes
+: *
+T0
+f
+mul_24Mulsub_15*gradients/dense_3/BiasAdd_grad/BiasAddGrad*
+T0*
+_output_shapes
+:
+B
+add_14Addmul_23mul_24*
+_output_shapes
+:*
+T0
+Q
+mul_25Mulbeta_2/readVariable_12/read*
+T0*
+_output_shapes
+:
+M
+sub_16/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+E
+sub_16Subsub_16/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_5Square*gradients/dense_3/BiasAdd_grad/BiasAddGrad*
+_output_shapes
+:*
+T0
+D
+mul_26Mulsub_16Square_5*
+T0*
+_output_shapes
+:
+B
+add_15Addmul_25mul_26*
+T0*
+_output_shapes
+:
+A
+mul_27Mulmul_2add_14*
+T0*
+_output_shapes
+:
+M
+Const_29Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_30Const*
+valueB
+ *  €*
+dtype0*
+_output_shapes
+: 
+Y
+clip_by_value_5/MinimumMinimumadd_15Const_30*
+_output_shapes
+:*
+T0
+b
+clip_by_value_5Maximumclip_by_value_5/MinimumConst_29*
+_output_shapes
+:*
+T0
+D
+Sqrt_5Sqrtclip_by_value_5*
+_output_shapes
+:*
+T0
+M
+add_16/yConst*
+dtype0*
+_output_shapes
+: *
+valueB
+ *wÌ+2
+D
+add_16AddSqrt_5add_16/y*
+T0*
+_output_shapes
+:
+I
+	truediv_6RealDivmul_27add_16*
+_output_shapes
+:*
+T0
+P
+sub_17Subdense_3/bias/read	truediv_6*
+_output_shapes
+:*
+T0
+”
+	Assign_12Assign
+Variable_4add_14*
+use_locking(*
+T0*
+_class
+loc:@Variable_4*
+validate_shape(*
+_output_shapes
+:
+–
+	Assign_13AssignVariable_12add_15*
+use_locking(*
+T0*
+_class
+loc:@Variable_12*
+validate_shape(*
+_output_shapes
+:
+˜
+	Assign_14Assigndense_3/biassub_17*
+use_locking(*
+T0*
+_class
+loc:@dense_3/bias*
+validate_shape(*
+_output_shapes
+:
+T
+mul_28Mulbeta_1/readVariable_5/read*
+T0*
+_output_shapes
+
+:
+M
+sub_18/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_18Subsub_18/xbeta_1/read*
+T0*
+_output_shapes
+: 
+f
+mul_29Mulsub_18&gradients/dense_3/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+F
+add_17Addmul_28mul_29*
+T0*
+_output_shapes
+
+:
+U
+mul_30Mulbeta_2/readVariable_13/read*
+T0*
+_output_shapes
+
+:
+M
+sub_19/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+E
+sub_19Subsub_19/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_6Square&gradients/dense_3/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+H
+mul_31Mulsub_19Square_6*
+T0*
+_output_shapes
+
+:
+F
+add_18Addmul_30mul_31*
+_output_shapes
+
+:*
+T0
+E
+mul_32Mulmul_2add_17*
+_output_shapes
+
+:*
+T0
+M
+Const_31Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_32Const*
+valueB
+ *  €*
+_output_shapes
+: *
+dtype0
+]
+clip_by_value_6/MinimumMinimumadd_18Const_32*
+T0*
+_output_shapes
+
+:
+f
+clip_by_value_6Maximumclip_by_value_6/MinimumConst_31*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_6Sqrtclip_by_value_6*
+_output_shapes
+
+:*
+T0
+M
+add_19/yConst*
+valueB
+ *wÌ+2*
+dtype0*
+_output_shapes
+: 
+H
+add_19AddSqrt_6add_19/y*
+_output_shapes
+
+:*
+T0
+M
+	truediv_7RealDivmul_32add_19*
+T0*
+_output_shapes
+
+:
+V
+sub_20Subdense_3/kernel/read	truediv_7*
+_output_shapes
+
+:*
+T0
+˜
+	Assign_15Assign
+Variable_5add_17*
+_class
+loc:@Variable_5*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+š
+	Assign_16AssignVariable_13add_18*
+_class
+loc:@Variable_13*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+ 
+	Assign_17Assigndense_3/kernelsub_20*!
+_class
+loc:@dense_3/kernel*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+P
+mul_33Mulbeta_1/readVariable_6/read*
+T0*
+_output_shapes
+:
+M
+sub_21/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_21Subsub_21/xbeta_1/read*
+T0*
+_output_shapes
+: 
+f
+mul_34Mulsub_21*gradients/dense_4/BiasAdd_grad/BiasAddGrad*
+_output_shapes
+:*
+T0
+B
+add_20Addmul_33mul_34*
+T0*
+_output_shapes
+:
+Q
+mul_35Mulbeta_2/readVariable_14/read*
+T0*
+_output_shapes
+:
+M
+sub_22/xConst*
+valueB
+ *  €?*
+_output_shapes
+: *
+dtype0
+E
+sub_22Subsub_22/xbeta_2/read*
+_output_shapes
+: *
+T0
+c
+Square_7Square*gradients/dense_4/BiasAdd_grad/BiasAddGrad*
+_output_shapes
+:*
+T0
+D
+mul_36Mulsub_22Square_7*
+T0*
+_output_shapes
+:
+B
+add_21Addmul_35mul_36*
+T0*
+_output_shapes
+:
+A
+mul_37Mulmul_2add_20*
+T0*
+_output_shapes
+:
+M
+Const_33Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_34Const*
+valueB
+ *  €*
+dtype0*
+_output_shapes
+: 
+Y
+clip_by_value_7/MinimumMinimumadd_21Const_34*
+T0*
+_output_shapes
+:
+b
+clip_by_value_7Maximumclip_by_value_7/MinimumConst_33*
+_output_shapes
+:*
+T0
+D
+Sqrt_7Sqrtclip_by_value_7*
+_output_shapes
+:*
+T0
+M
+add_22/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+D
+add_22AddSqrt_7add_22/y*
+T0*
+_output_shapes
+:
+I
+	truediv_8RealDivmul_37add_22*
+T0*
+_output_shapes
+:
+P
+sub_23Subdense_4/bias/read	truediv_8*
+T0*
+_output_shapes
+:
+”
+	Assign_18Assign
+Variable_6add_20*
+use_locking(*
+T0*
+_class
+loc:@Variable_6*
+validate_shape(*
+_output_shapes
+:
+–
+	Assign_19AssignVariable_14add_21*
+use_locking(*
+T0*
+_class
+loc:@Variable_14*
+validate_shape(*
+_output_shapes
+:
+˜
+	Assign_20Assigndense_4/biassub_23*
+use_locking(*
+T0*
+_class
+loc:@dense_4/bias*
+validate_shape(*
+_output_shapes
+:
+T
+mul_38Mulbeta_1/readVariable_7/read*
+_output_shapes
+
+:*
+T0
+M
+sub_24/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_24Subsub_24/xbeta_1/read*
+_output_shapes
+: *
+T0
+f
+mul_39Mulsub_24&gradients/dense_4/MatMul_grad/MatMul_1*
+T0*
+_output_shapes
+
+:
+F
+add_23Addmul_38mul_39*
+_output_shapes
+
+:*
+T0
+U
+mul_40Mulbeta_2/readVariable_15/read*
+T0*
+_output_shapes
+
+:
+M
+sub_25/xConst*
+valueB
+ *  €?*
+dtype0*
+_output_shapes
+: 
+E
+sub_25Subsub_25/xbeta_2/read*
+T0*
+_output_shapes
+: 
+c
+Square_8Square&gradients/dense_4/MatMul_grad/MatMul_1*
+_output_shapes
+
+:*
+T0
+H
+mul_41Mulsub_25Square_8*
+_output_shapes
+
+:*
+T0
+F
+add_24Addmul_40mul_41*
+T0*
+_output_shapes
+
+:
+E
+mul_42Mulmul_2add_23*
+_output_shapes
+
+:*
+T0
+M
+Const_35Const*
+valueB
+ *    *
+dtype0*
+_output_shapes
+: 
+M
+Const_36Const*
+valueB
+ *  €*
+dtype0*
+_output_shapes
+: 
+]
+clip_by_value_8/MinimumMinimumadd_24Const_36*
+_output_shapes
+
+:*
+T0
+f
+clip_by_value_8Maximumclip_by_value_8/MinimumConst_35*
+T0*
+_output_shapes
+
+:
+H
+Sqrt_8Sqrtclip_by_value_8*
+T0*
+_output_shapes
+
+:
+M
+add_25/yConst*
+valueB
+ *wÌ+2*
+_output_shapes
+: *
+dtype0
+H
+add_25AddSqrt_8add_25/y*
+T0*
+_output_shapes
+
+:
+M
+	truediv_9RealDivmul_42add_25*
+_output_shapes
+
+:*
+T0
+V
+sub_26Subdense_4/kernel/read	truediv_9*
+_output_shapes
+
+:*
+T0
+˜
+	Assign_21Assign
+Variable_7add_23*
+use_locking(*
+T0*
+_class
+loc:@Variable_7*
+validate_shape(*
+_output_shapes
+
+:
+š
+	Assign_22AssignVariable_15add_24*
+use_locking(*
+T0*
+_class
+loc:@Variable_15*
+validate_shape(*
+_output_shapes
+
+:
+ 
+	Assign_23Assigndense_4/kernelsub_26*!
+_class
+loc:@dense_4/kernel*
+_output_shapes
+
+:*
+T0*
+validate_shape(*
+use_locking(
+Ã
+group_deps_1NoOp^add^Mean_4
+^AssignAdd^Assign	^Assign_1	^Assign_2	^Assign_3	^Assign_4	^Assign_5	^Assign_6	^Assign_7	^Assign_8	^Assign_9
+^Assign_10
+^Assign_11
+^Assign_12
+^Assign_13
+^Assign_14
+^Assign_15
+^Assign_16
+^Assign_17
+^Assign_18
+^Assign_19
+^Assign_20
+^Assign_21
+^Assign_22
+^Assign_23
+×
+initNoOp^dense_1/kernel/Assign^dense_1/bias/Assign^dense_2/kernel/Assign^dense_2/bias/Assign^dense_3/kernel/Assign^dense_3/bias/Assign^dense_4/kernel/Assign^dense_4/bias/Assign^iterations/Assign
+^lr/Assign^beta_1/Assign^beta_2/Assign^decay/Assign^Variable/Assign^Variable_1/Assign^Variable_2/Assign^Variable_3/Assign^Variable_4/Assign^Variable_5/Assign^Variable_6/Assign^Variable_7/Assign^Variable_8/Assign^Variable_9/Assign^Variable_10/Assign^Variable_11/Assign^Variable_12/Assign^Variable_13/Assign^Variable_14/Assign^Variable_15/Assign""Ä
+	variables¶³
+@
+dense_1/kernel:0dense_1/kernel/Assigndense_1/kernel/read:0
+:
+dense_1/bias:0dense_1/bias/Assigndense_1/bias/read:0
+@
+dense_2/kernel:0dense_2/kernel/Assigndense_2/kernel/read:0
+:
+dense_2/bias:0dense_2/bias/Assigndense_2/bias/read:0
+@
+dense_3/kernel:0dense_3/kernel/Assigndense_3/kernel/read:0
+:
+dense_3/bias:0dense_3/bias/Assigndense_3/bias/read:0
+@
+dense_4/kernel:0dense_4/kernel/Assigndense_4/kernel/read:0
+:
+dense_4/bias:0dense_4/bias/Assigndense_4/bias/read:0
+4
+iterations:0iterations/Assigniterations/read:0
+
+lr:0	lr/Assign	lr/read:0
+(
+beta_1:0beta_1/Assignbeta_1/read:0
+(
+beta_2:0beta_2/Assignbeta_2/read:0
+%
+decay:0decay/Assigndecay/read:0
+.
+
+Variable:0Variable/AssignVariable/read:0
+4
+Variable_1:0Variable_1/AssignVariable_1/read:0
+4
+Variable_2:0Variable_2/AssignVariable_2/read:0
+4
+Variable_3:0Variable_3/AssignVariable_3/read:0
+4
+Variable_4:0Variable_4/AssignVariable_4/read:0
+4
+Variable_5:0Variable_5/AssignVariable_5/read:0
+4
+Variable_6:0Variable_6/AssignVariable_6/read:0
+4
+Variable_7:0Variable_7/AssignVariable_7/read:0
+4
+Variable_8:0Variable_8/AssignVariable_8/read:0
+4
+Variable_9:0Variable_9/AssignVariable_9/read:0
+7
+Variable_10:0Variable_10/AssignVariable_10/read:0
+7
+Variable_11:0Variable_11/AssignVariable_11/read:0
+7
+Variable_12:0Variable_12/AssignVariable_12/read:0
+7
+Variable_13:0Variable_13/AssignVariable_13/read:0
+7
+Variable_14:0Variable_14/AssignVariable_14/read:0
+7
+Variable_15:0Variable_15/AssignVariable_15/read:0"Î
+trainable_variables¶³
+@
+dense_1/kernel:0dense_1/kernel/Assigndense_1/kernel/read:0
+:
+dense_1/bias:0dense_1/bias/Assigndense_1/bias/read:0
+@
+dense_2/kernel:0dense_2/kernel/Assigndense_2/kernel/read:0
+:
+dense_2/bias:0dense_2/bias/Assigndense_2/bias/read:0
+@
+dense_3/kernel:0dense_3/kernel/Assigndense_3/kernel/read:0
+:
+dense_3/bias:0dense_3/bias/Assigndense_3/bias/read:0
+@
+dense_4/kernel:0dense_4/kernel/Assigndense_4/kernel/read:0
+:
+dense_4/bias:0dense_4/bias/Assigndense_4/bias/read:0
+4
+iterations:0iterations/Assigniterations/read:0
+
+lr:0	lr/Assign	lr/read:0
+(
+beta_1:0beta_1/Assignbeta_1/read:0
+(
+beta_2:0beta_2/Assignbeta_2/read:0
+%
+decay:0decay/Assigndecay/read:0
+.
+
+Variable:0Variable/AssignVariable/read:0
+4
+Variable_1:0Variable_1/AssignVariable_1/read:0
+4
+Variable_2:0Variable_2/AssignVariable_2/read:0
+4
+Variable_3:0Variable_3/AssignVariable_3/read:0
+4
+Variable_4:0Variable_4/AssignVariable_4/read:0
+4
+Variable_5:0Variable_5/AssignVariable_5/read:0
+4
+Variable_6:0Variable_6/AssignVariable_6/read:0
+4
+Variable_7:0Variable_7/AssignVariable_7/read:0
+4
+Variable_8:0Variable_8/AssignVariable_8/read:0
+4
+Variable_9:0Variable_9/AssignVariable_9/read:0
+7
+Variable_10:0Variable_10/AssignVariable_10/read:0
+7
+Variable_11:0Variable_11/AssignVariable_11/read:0
+7
+Variable_12:0Variable_12/AssignVariable_12/read:0
+7
+Variable_13:0Variable_13/AssignVariable_13/read:0
+7
+Variable_14:0Variable_14/AssignVariable_14/read:0
+7
+Variable_15:0Variable_15/AssignVariable_15/read:0=ííš       ÈÁ•	çÒÔSDOÖA*
+
+val_loss~ÉL?ä‘ó       	¬ÓÔSDOÖA*
+
+val_acc@P ?ÃÁ¡       £K"	ÔÔSDOÖA*
+
+loss5Q? ÷¾-       çÎø	fÔÔSDOÖA*
+
+
+accA?\U]       ÙÜ2	«œ…YDOÖA*
+
+val_lossñ¯I?nJÍT       `/ß#	u…YDOÖA*
+
+val_acc÷À$?Öî       ›Ø-	İ…YDOÖA*
+
+lossŠåC?EØ9“       ‹ñ(	:…YDOÖA*
+
+
+accí!?êil       ÙÜ2	ï÷4_DOÖA*
+
+val_lossŞïG?0~ü       `/ß#	¹ø4_DOÖA*
+
+val_accµ¯$?ÕJ|ì       ›Ø-	ù4_DOÖA*
+
+loss×šA?s…}u       ‹ñ(	zù4_DOÖA*
+
+
+accjÃ$?üz¶       ÙÜ2	8Û%eDOÖA*
+
+val_loss&ŒF?ã™       `/ß#	Ü%eDOÖA*
+
+val_accÀ¤'?OÌs       ›Ø-	eÜ%eDOÖA*
+
+loss©Ç??À"¿       ‹ñ(	½Ü%eDOÖA*
+
+
+acc~ '?İ¸\Ì       ÙÜ2	Û[ğjDOÖA*
+
+val_lossÅ!F?q“£c       `/ß#	¢\ğjDOÖA*
+
+val_acc)(?ÔRza       ›Ø-	
+]ğjDOÖA*
+
+lossdÀ>?ï·       ‹ñ(	h]ğjDOÖA*
+
+
+acc`(?É#Ü       ÙÜ2	¹pDOÖA*
+
+val_loss¬zE?ƒQ¨q       `/ß#	Ğ¹pDOÖA*
+
+val_accğ*?mÒÔ       ›Ø-	6¹pDOÖA*
+
+loss(4>?¨ˆ(       ‹ñ(	’¹pDOÖA*
+
+
+accÛ9)?£ğv1       ÙÜ2	Œ€vDOÖA*
+
+val_lossg$E?wïóÿ       `/ß#	VvDOÖA*
+
+val_accæ+?ÁjÔå       ›Ø-	¹vDOÖA*
+
+lossùí=? 8ë‚       ‹ñ(	‚vDOÖA*
+
+
+accÃ)?r/zV       ÙÜ2	aü]|DOÖA*
+
+val_loss£E?HÂâp       `/ß#	)ı]|DOÖA*
+
+val_accf])?g§èZ       ›Ø-	ı]|DOÖA*
+
+lossMŠ=?¼˜       ‹ñ(	îı]|DOÖA*
+
+
+acc-è)?˜*¥        ÙÜ2	´j@‚DOÖA*
+
+val_loss¡ÉD?¾3]       `/ß#	{k@‚DOÖA*
+
+val_acc5™+?¥İã•       ›Ø-	Şk@‚DOÖA*
+
+loss—A=?o$z       ‹ñ(	:l@‚DOÖA*
+
+
+acc
+-*?å^›-       ÙÜ2	@>ˆDOÖA	*
+
+val_lossEpD?6ßí®       `/ß#		?ˆDOÖA	*
+
+val_acc+?	´,       ›Ø-	q?ˆDOÖA	*
+
+lossœÄ<?tÓ=W       ‹ñ(	Ì?ˆDOÖA	*
+
+
+accrå*?–”£D       ÙÜ2	*‚òDOÖA
+*
+
+val_lossşÕC?p8¿-       `/ß#	õ‚òDOÖA
+*
+
+val_acc ˜,?pa1E       ›Ø-	ZƒòDOÖA
+*
+
+loss/w<?ˆ
+S       ‹ñ(	´ƒòDOÖA
+*
+
+
+accB5+?!mV%       ÙÜ2	/çÑ“DOÖA*
+
+val_loss‰C?R?£Ä       `/ß#	ùçÑ“DOÖA*
+
+val_accÙ¡*?äãÉN       ›Ø-	_èÑ“DOÖA*
+
+lossì<?âJ]       ‹ñ(	¸èÑ“DOÖA*
+
+
+accA+?\éuş       ÙÜ2	H¸™DOÖA*
+
+val_lossg"C?ç¦ö       `/ß#	áH¸™DOÖA*
+
+val_acc, -?‘!R       ›Ø-	EI¸™DOÖA*
+
+loss­Ë;?™0Ó       ‹ñ(	 I¸™DOÖA*
+
+
+accB›+?kØR¯       ÙÜ2	‚Ï›ŸDOÖA*
+
+val_loss:C?w–‚Ÿ       `/ß#	GĞ›ŸDOÖA*
+
+val_acc+Ö-?S—       ›Ø-	©Ğ›ŸDOÖA*
+
+loss‚|;?Ë "       ‹ñ(	ÿĞ›ŸDOÖA*
+
+
+accSç+?±Ïşƒ       ÙÜ2	ß½x¥DOÖA*
+
+val_lossV/D?ÈBÄ_       `/ß#	§¾x¥DOÖA*
+
+val_acc-?µÌx·       ›Ø-	¿x¥DOÖA*
+
+loss!M;?³›:       ‹ñ(	g¿x¥DOÖA*
+
+
+acc¿;,?ëL       ÙÜ2	4ÆZ«DOÖA*
+
+val_loss{B?]TÔ       `/ß#	ÇZ«DOÖA*
+
+val_accÆ™,?¡9¤ß       ›Ø-	mÇZ«DOÖA*
+
+lossù;?ŒÓ÷       ‹ñ(	ÎÇZ«DOÖA*
+
+
+accW“,?C¯       ÙÜ2	/P9±DOÖA*
+
+val_lossê,C?\½`       `/ß#	øP9±DOÖA*
+
+val_acc&9*?¥õ,       ›Ø-	[Q9±DOÖA*
+
+loss­¹:?[ªXc       ‹ñ(	¶Q9±DOÖA*
+
+
+accNä,?mK!D       ÙÜ2	dš·DOÖA*
+
+val_loss}C?Â¯éÔ       `/ß#	-›·DOÖA*
+
+val_acc´+?«ãœ       ›Ø-	’›·DOÖA*
+
+lossóz:?y¾       ‹ñ(	ì›·DOÖA*
+
+
+accNõ,?†Ãàı       ÙÜ2	Ì´½DOÖA*
+
+val_lossåQB?¸evà       `/ß#	µ½DOÖA*
+
+val_acc¢-?/æEg       ›Ø-	óµ½DOÖA*
+
+lossw:?YÏ       ‹ñ(	K¶½DOÖA*
+
+
+acc-?L+ÆÚ       ÙÜ2	ĞôæÂDOÖA*
+
+val_loss(B?LÆİe       `/ß#	”õæÂDOÖA*
+
+val_acc÷+?ğØ:Å       ›Ø-	ùõæÂDOÖA*
+
+loss_H:?£üw+       ‹ñ(	VöæÂDOÖA*
+
+
+accÔ-?ÍÚ`›       ÙÜ2	œàÈÈDOÖA*
+
+val_lossªğA?.ç       `/ß#	^áÈÈDOÖA*
+
+val_accÇÇ.?äôÌÅ       ›Ø-	ÂáÈÈDOÖA*
+
+lossÍú9?×7Ï2       ‹ñ(	âÈÈDOÖA*
+
+
+accZ.?›÷
+       ÙÜ2	š¦ÎDOÖA*
+
+val_lossõA?0<ã8       `/ß#	ãš¦ÎDOÖA*
+
+val_accæ1?+}°h       ›Ø-	F›¦ÎDOÖA*
+
+loss~ê9?0j        ‹ñ(	Ÿ›¦ÎDOÖA*
+
+
+acc.Ô.?6¨€       ÙÜ2	¾tŠÔDOÖA*
+
+val_lossuĞA?,Å­       `/ß#	‡uŠÔDOÖA*
+
+val_acc5.?Çàû       ›Ø-	ìuŠÔDOÖA*
+
+loss^ß9?lÃ+0       ‹ñ(	FvŠÔDOÖA*
+
+
+acctã.?Æ¼¤{       ÙÜ2	µÕlÚDOÖA*
+
+val_lossŞB?·{n¾       `/ß#	{ÖlÚDOÖA*
+
+val_acc¿í.?™CÜ„       ›Ø-	âÖlÚDOÖA*
+
+loss%«9?N´       ‹ñ(	?×lÚDOÖA*
+
+
+accL&/?ËÒÄœ       ÙÜ2	rèVàDOÖA*
+
+val_loss;`A?ã­¢Ã       `/ß#	<éVàDOÖA*
+
+val_acc90?dÙ¬       ›Ø-	¢éVàDOÖA*
+
+loss69?¼é	       ‹ñ(	úéVàDOÖA*
+
+
+accè¡/?1å8ì       ÙÜ2	Ø1<æDOÖA*
+
+val_lossînA?–"Åj       `/ß#	2<æDOÖA*
+
+val_accc¹/?˜×.       ›Ø-	 3<æDOÖA*
+
+lossì9?÷zz(       ‹ñ(	X3<æDOÖA*
+
+
+accsÀ/?n4J       ÙÜ2	şÕBìDOÖA*
+
+val_lossÛA?3™qw       `/ß#	ÄÖBìDOÖA*
+
+val_acc]ö/?‘[¨       ›Ø-	%×BìDOÖA*
+
+lossqt9?¸Šó‹       ‹ñ(	|×BìDOÖA*
+
+
+acc€
+0?è©Ò²       ÙÜ2	Ø]BòDOÖA*
+
+val_lossnA?8$|â       `/ß#	˜^BòDOÖA*
+
+val_accÌõ.?ù ¯Î       ›Ø-	ù^BòDOÖA*
+
+lossK9?P—g       ‹ñ(	R_BòDOÖA*
+
+
+accsÀ/?dbnû       ÙÜ2	ş¤IøDOÖA*
+
+val_lossÀ8A?ä[å       `/ß#	Æ¥IøDOÖA*
+
+val_accI1?Ø¯îï       ›Ø-	*¦IøDOÖA*
+
+lossY9?ßQ”       ‹ñ(	…¦IøDOÖA*
+
+
+acc$W0?’/ã       ÙÜ2	+^~şDOÖA*
+
+val_loss-A?j¦#8       `/ß#	ï^~şDOÖA*
+
+val_accE–2?Nzú       ›Ø-	U_~şDOÖA*
+
+lossB9?3Îz#       ‹ñ(	°_~şDOÖA*
+
+
+accÁ(0?­!¬ù       ÙÜ2	ô;lEOÖA*
+
+val_loss$ã@?1¹       `/ß#	¼<lEOÖA*
+
+val_acc˜ğ1?do       ›Ø-	!=lEOÖA*
+
+lossE9?E~n
+       ‹ñ(	{=lEOÖA*
+
+
+accı30?ŞÓÖª       ÙÜ2	ÆIe
+EOÖA*
+
+val_lossüõ@?&ë„       `/ß#	‹Je
+EOÖA*
+
+val_accP2?íóB       ›Ø-	ìJe
+EOÖA*
+
+lossC9?3zc`       ‹ñ(	GKe
+EOÖA*
+
+
+acc‘0?FÕù       ÙÜ2	¼^EOÖA *
+
+val_lossd$A?>èô       `/ß#	†^EOÖA *
+
+val_accË¡0?Œ$Ûí       ›Ø-	é^EOÖA *
+
+loss>29?Ÿã’ò       ‹ñ(	A^EOÖA *
+
+
+acc60?M‘j        ÙÜ2	ÿ†EOÖA!*
+
+val_lossîä;?öXK       `/ß#	Õÿ†EOÖA!*
+
+val_accíÌ1?,ÅB       ›Ø-	5 ‡EOÖA!*
+
+lossèï4?Æñ       ‹ñ(	 ‡EOÖA!*
+
+
+acc‡•1?±Ş‰¢       ÙÜ2	á€ÁEOÖA"*
+
+val_loss<?v„ùú       `/ß#	¦ÁEOÖA"*
+
+val_accp—0?ßîŞï       ›Ø-	‚ÁEOÖA"*
+
+lossà!3?Uµì       ‹ñ(	_‚ÁEOÖA"*
+
+
+accÍ“1?rıŒ¼       ÙÜ2	ÿ.^"EOÖA#*
+
+val_lossR™;?f®$       `/ß#	Ì/^"EOÖA#*
+
+val_accAÀ3?Ş*       ›Ø-	30^"EOÖA#*
+
+lossl3?tqÜ       ‹ñ(	‘0^"EOÖA#*
+
+
+accÍ“1?œkU       ÙÜ2	Œdù'EOÖA$*
+
+val_loss-Â;?L:ƒ       `/ß#	Oeù'EOÖA$*
+
+val_accµ¿0?“ÃÍ¿       ›Ø-	±eù'EOÖA$*
+
+lossfÕ2?^Ü       ‹ñ(	fù'EOÖA$*
+
+
+acc(‹1?çãK       ÙÜ2	6“-EOÖA%*
+
+val_loss£›;?3‡-        `/ß#	ù“-EOÖA%*
+
+val_accòĞ2?ßf°}       ›Ø-	]“-EOÖA%*
+
+lossÇ·2?1R™       ‹ñ(	¹“-EOÖA%*
+
+
+accÄ~1?îĞ3       ÙÜ2	¦B/3EOÖA&*
+
+val_loss¤z;?U$b½       `/ß#	nC/3EOÖA&*
+
+val_acc72?€›zõ       ›Ø-	ÒC/3EOÖA&*
+
+lossŸ2?x;R       ‹ñ(	+D/3EOÖA&*
+
+
+accø…1?$Òã       ÙÜ2	åÊ8EOÖA'*
+
+val_lossP“;?¶ñNÌ       `/ß#	ÜåÊ8EOÖA'*
+
+val_accßš2?®_s       ›Ø-	AæÊ8EOÖA'*
+
+loss#£2?awvN       ‹ñ(	œæÊ8EOÖA'*
+
+
+acc”W1?ÏÎ]‚       ÙÜ2	Fg>EOÖA(*
+
+val_loss-Ú;?'½ê       `/ß#	3g>EOÖA(*
+
+val_accÑı2?-@pK       ›Ø-	­g>EOÖA(*
+
+lossÃ‚2?ûiªº       ‹ñ(	g>EOÖA(*
+
+
+accø§1?²ëè?       ÙÜ2	ğŞDEOÖA)*
+
+val_loss\H;?Ügä       `/ß#	ºßDEOÖA)*
+
+val_acc[ã2?˜Ú³       ›Ø-	"àDEOÖA)*
+
+lossÿi2?Ã>•¾       ‹ñ(	€àDEOÖA)*
+
+
+acc¡Ã1?yÈA       ÙÜ2	½¡³JEOÖA**
+
+val_loss›-;?$˜Ÿ×       `/ß#	„¢³JEOÖA**
+
+val_accÀI3?
+¥HÒ       ›Ø-	ê¢³JEOÖA**
+
+lossÎp2?i7£¿       ‹ñ(	E£³JEOÖA**
+
+
+accô”1?)?pâ       ÙÜ2	t·QEOÖA+*
+
+val_lossÒo;?¡ÄÒ       `/ß#	P·QEOÖA+*
+
+val_acc®Ò1?Hš       ›Ø-	··QEOÖA+*
+
+lossÎg2?g)‘       ‹ñ(	·QEOÖA+*
+
+
+accÕ¹1?Àbğ       ÙÜ2	²XEOÖA,*
+
+val_loss!;?R]h       `/ß#	É²XEOÖA,*
+
+val_acc 52?„-       ›Ø-	2³XEOÖA,*
+
+lossŸY2?bã£ê       ‹ñ(	Œ³XEOÖA,*
+
+
+acc1?âÆ¢       ÙÜ2	y“[_EOÖA-*
+
+val_loss%à<?ú’•˜       `/ß#	>”[_EOÖA-*
+
+val_acc0?‰ØËĞ       ›Ø-	£”[_EOÖA-*
+
+loss>D2?(i»h       ‹ñ(	ü”[_EOÖA-*
+
+
+accÍ“1?Ü”ª       ÙÜ2	+ÉçfEOÖA.*
+
+val_loss0¯;?Ù¢{M       `/ß#	ñÉçfEOÖA.*
+
+val_acc›11?Üpt       ›Ø-	UÊçfEOÖA.*
+
+loss P2?tE>§       ‹ñ(	°ÊçfEOÖA.*
+
+
+accô¥1?37âŞ       ÙÜ2	6ÉnEOÖA/*
+
+val_loss«Q??õ        `/ß#	ûÉnEOÖA/*
+
+val_accè,?w»(î       ›Ø-	`ÊnEOÖA/*
+
+loss¿D2?ÃQF?       ‹ñ(	¹ÊnEOÖA/*
+
+
+accâĞ1?6ªĞ       ÙÜ2	QUªtEOÖA0*
+
+val_loss;„;?lõRÎ       `/ß#	VªtEOÖA0*
+
+val_accc(3?“oN       ›Ø-	{VªtEOÖA0*
+
+loss
+12?–?œö       ‹ñ(	ÖVªtEOÖA0*
+
+
+accâ¿1?4£©F       ÙÜ2	óp?|EOÖA1*
+
+val_loss"è:?Ñ€ÛF       `/ß#	çq?|EOÖA1*
+
+val_acc‰”3?¸ˆ‚       ›Ø-	ir?|EOÖA1*
+
+losst#2?·gŠ       ‹ñ(	Ùr?|EOÖA1*
+
+
+accA2?]ÒDf       ÙÜ2	 8H„EOÖA2*
+
+val_lossxı:?dèt       `/ß#	Â8H„EOÖA2*
+
+val_accä3?Ë±%       ›Ø-	$9H„EOÖA2*
+
+lossU2?­[»       ‹ñ(	{9H„EOÖA2*
+
+
+acc²ş1?¿Å×
